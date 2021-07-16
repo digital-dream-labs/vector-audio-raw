@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2681AECF-C4FE-49C4-8BB1-7D67037AD367}" SchemaVersion="85" RootDocumentID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}">
+	<Events>
+		<WorkUnit Name="Robot_Vic_Sfx" ID="{2681AECF-C4FE-49C4-8BB1-7D67037AD367}" OwnerID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Robot_Vic_Sfx__Head_and_Lift" ID="{E94A68EC-4E67-42F7-9516-D1A6D25E3D0A}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Sfx__Tread" ID="{71E80F48-3FC5-4240-A569-DC750E6F92B2}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Sfx__Misc" ID="{852E30DB-A9D0-4FF9-8361-B1A59952B96B}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Sfx__Scrn" ID="{B3513429-7007-439F-97C5-A3D6A0EDD7CE}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Sfx__Purr" ID="{82957BC4-5755-40A8-B913-B2D829F3F806}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Scene" ID="{AD721151-52B0-4DD0-9311-5A3614A3D2B8}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

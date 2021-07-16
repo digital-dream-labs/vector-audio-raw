@@ -1,0 +1,3303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{470F98B0-FB5C-485A-9A5A-74A01CD10A50}" SchemaVersion="85" RootDocumentID="{4B9049D7-A855-4C5A-A339-B0A20AA66017}">
+	<AudioObjects>
+		<WorkUnit Name="Dev_Debug" ID="{470F98B0-FB5C-485A-9A5A-74A01CD10A50}" OwnerID="{4B9049D7-A855-4C5A-A339-B0A20AA66017}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Dev_Test_Tones" ID="{45DBCF89-F787-43E9-9B71-3AC019F59527}" ShortID="121198006">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{25046B4A-E979-4EA5-A1B6-D118935CCC52}" ShortID="385078160">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="event_volume" ID="{65AAA66C-C5DF-4E2E-867D-149CF9F4B463}" WorkUnitID="{D7D36728-07ED-45F4-872F-DF58B94CA436}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{77B5A0A6-385C-453E-97CB-E42B227E607D}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect Medium" ID="{C2242190-EA66-4EC8-A876-8713CEEBAAC8}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Dev_General_Bus" ID="{8F7BDC5A-741B-417E-91A0-0737215A1C92}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Dev_Robot__Freq_Sweep_5sec" ID="{B09B8332-0D75-4008-B093-D88DDEFF2D6F}" ShortID="383763263">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{04403754-D827-4BAB-8248-BA950498275A}" ShortID="748458010" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="5"/>
+										<Property Name="StartFreq" Type="Real32" Value="20"/>
+										<Property Name="StopFreq" Type="Real32" Value="20000"/>
+										<Property Name="SweepFreq" Type="bool" Value="True"/>
+										<Property Name="SweepFreqType" Type="int32" Value="1"/>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{04403754-D827-4BAB-8248-BA950498275A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__Pink_1sec" ID="{EA1AFECF-240D-466E-80D7-D55C7A64F4D8}" ShortID="242736103">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{369CC1B1-FFB6-4AD8-987C-F3FD637BFF8E}" ShortID="148751953" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+										<Property Name="WaveType" Type="int32" Value="5"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{369CC1B1-FFB6-4AD8-987C-F3FD637BFF8E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__Pink_5sec" ID="{D1B45799-E6A5-4873-B0BE-89DFF5BAF28B}" ShortID="376811511">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{2EC9B605-7E99-40DD-A50C-DBB180282650}" ShortID="194053584" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="5"/>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+										<Property Name="WaveType" Type="int32" Value="5"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{2EC9B605-7E99-40DD-A50C-DBB180282650}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__1k_1sec" ID="{4FF57FEB-484F-4A77-A510-B29F9FC3D087}" ShortID="298236310">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{1CF8FC50-3AB2-4A74-BD7C-F959B37B5E3D}" ShortID="971115154" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{1CF8FC50-3AB2-4A74-BD7C-F959B37B5E3D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__1k_5sec" ID="{0F96E497-5AFA-4510-B272-07FA599A282F}" ShortID="737595242">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{04470FCB-26CF-477B-8E28-08550A782C9A}" ShortID="544394534" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="5"/>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{04470FCB-26CF-477B-8E28-08550A782C9A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__440Hz_5sec" ID="{DF3F9110-629F-4616-A9A1-5DDF72580CB9}" ShortID="439139757">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{9E41EC9F-6792-4AF1-9382-FD919F1B2B90}" ShortID="245431653" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="5"/>
+										<Property Name="StartFreq" Type="Real32" Value="440"/>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{9E41EC9F-6792-4AF1-9382-FD919F1B2B90}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__1760Hz_5sec" ID="{D8592DE6-4A93-455B-AD61-2DFD7085BBF6}" ShortID="860732999">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{D26F2E34-7F8B-4CC6-88C8-83962C2B2C22}" ShortID="675490650" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="5"/>
+										<Property Name="StartFreq" Type="Real32" Value="1760"/>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{D26F2E34-7F8B-4CC6-88C8-83962C2B2C22}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_External" ID="{51A159B5-25C5-4F80-A48A-DC6BC46E9D54}" ShortID="1030535861">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Anki Streaming Wave Portal" ID="{B3913CF2-3A14-4742-AFCB-1F4DFA4EB773}" ShortID="358625290" PluginName="Anki Streaming Wave Portal" CompanyID="300" PluginID="110">
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Anki Streaming Wave Portal" ID="{B3913CF2-3A14-4742-AFCB-1F4DFA4EB773}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__Playpen_Freq_Sweep" ID="{E4D5BC02-E428-402A-9DA7-398D4DA2EC46}" ShortID="812823040">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{4D23BF4D-802B-4228-8910-F8B724478F9A}" ShortID="1006113785" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="5"/>
+										<Property Name="StartFreq" Type="Real32" Value="1400"/>
+										<Property Name="StopFreq" Type="Real32" Value="2200"/>
+										<Property Name="SweepFreq" Type="bool" Value="True"/>
+										<Property Name="WaveGain" Type="Real32" Value="-1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{4D23BF4D-802B-4228-8910-F8B724478F9A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__Freq_Sweep_20sec" ID="{D180CC2A-96BB-42D4-B093-0F27BE9145F9}" ShortID="351822813">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{493ED7E5-42FF-4020-BD38-EC02B4F14966}" ShortID="338116612" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="20"/>
+										<Property Name="StartFreq" Type="Real32" Value="20"/>
+										<Property Name="StopFreq" Type="Real32" Value="20000"/>
+										<Property Name="SweepFreq" Type="bool" Value="True"/>
+										<Property Name="SweepFreqType" Type="int32" Value="1"/>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{493ED7E5-42FF-4020-BD38-EC02B4F14966}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__Mozart" ID="{3C0FF520-2CCB-4D8A-80DF-426E77B8196B}" ShortID="857243944">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dev_Mozart" ID="{3EBB7C5C-7CD4-4A86-BD18-A5C56DDFB8EF}" ShortID="373045139">
+									<Language>SFX</Language>
+									<AudioFile>Dev_Mozart.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dev_Mozart" ID="{3EBB7C5C-7CD4-4A86-BD18-A5C56DDFB8EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__Tone_10_Frames" ID="{A2471124-D687-4D64-B392-1A2DA017A421}" ShortID="1000745121">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Sine" ID="{3C23A383-45E1-40F0-A38F-7B272A328EF8}" ShortID="945237254" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+									<PropertyList>
+										<Property Name="SineDuration" Type="Real32" Value="0.333"/>
+										<Property Name="SineFrequency" Type="Real32" Value="880"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Sine" ID="{3C23A383-45E1-40F0-A38F-7B272A328EF8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__Tone_30_Frames" ID="{FA53131F-FF31-4CD1-8A2D-4DFFC7C7DB77}" ShortID="676526041">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Sine" ID="{DC704BBC-E207-4BD1-943A-0AD82618E0ED}" ShortID="178162717" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+									<PropertyList>
+										<Property Name="SineFrequency" Type="Real32" Value="660"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Sine" ID="{DC704BBC-E207-4BD1-943A-0AD82618E0ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot__Tone_150_Frames" ID="{80B2EFF5-AAD0-4105-AFF2-6C77B86CFFEA}" ShortID="613075228">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Sine" ID="{5ED06076-9A3C-4CB0-9DCF-A6C23DD699E9}" ShortID="1021108972" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+									<PropertyList>
+										<Property Name="SineDuration" Type="Real32" Value="5"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Sine" ID="{5ED06076-9A3C-4CB0-9DCF-A6C23DD699E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Dev_Robot__Curious_Muttering" ID="{2C467B8C-6121-4236-9C14-8F2E39F1FE96}" ShortID="982877758">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="10"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_01_WM" ID="{9D6622CD-7D94-4904-9389-7E0BEEA64D2B}" ShortID="1005789770">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_01_WM" ID="{540CA441-A7B5-4924-B3CA-D79812BB568A}" ShortID="1049476053">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_01_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_01_WM" ID="{540CA441-A7B5-4924-B3CA-D79812BB568A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_02_WM" ID="{C9ECC9B3-2896-433F-9F16-46E32201E9F2}" ShortID="912976037">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_02_WM" ID="{9F2B453C-A8B4-468F-BEC6-74EC3515E39F}" ShortID="90765854">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.01638608305275E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.71036288814067E-02"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_02_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_02_WM" ID="{9F2B453C-A8B4-468F-BEC6-74EC3515E39F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_03_WM" ID="{3831CD25-5181-431F-AC0F-F4FC217A263E}" ShortID="981341557">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_03_WM" ID="{58CA03E2-BD46-4FCE-AC18-AD409AFA2450}" ShortID="722722832">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_03_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_03_WM" ID="{58CA03E2-BD46-4FCE-AC18-AD409AFA2450}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_04_WM" ID="{9533F48A-5D06-463B-B43C-365E27093944}" ShortID="1016030673">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_04_WM" ID="{1DB4DE7B-0464-4B10-BD7E-7E3C4050585C}" ShortID="943023007">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_04_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_04_WM" ID="{1DB4DE7B-0464-4B10-BD7E-7E3C4050585C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_05_WM" ID="{58B775BC-5D9A-45A0-A30A-6E5C8DEC1388}" ShortID="749606190">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_05_WM" ID="{907D203D-770D-420C-8A77-726D3E55854E}" ShortID="947452876">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_05_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_05_WM" ID="{907D203D-770D-420C-8A77-726D3E55854E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_06_WM" ID="{D409E007-B871-443E-ACFC-3B376574E5BB}" ShortID="256300694">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_06_WM" ID="{238B18D8-57C7-4115-B7A3-969B7BF73577}" ShortID="482879846">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_06_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_06_WM" ID="{238B18D8-57C7-4115-B7A3-969B7BF73577}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_07_WM" ID="{D1D6CAF8-575C-48D2-B8C4-4EC3ADBEF1DB}" ShortID="661990508">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_07_WM" ID="{871B92D3-61CE-42A3-9856-190C616BA0E0}" ShortID="307330369">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_07_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_07_WM" ID="{871B92D3-61CE-42A3-9856-190C616BA0E0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_08_WM" ID="{B49A6FE0-69BF-4CEA-BFB7-8BCB2045358B}" ShortID="380396523">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_08_WM" ID="{F488F677-5723-4B35-8C06-A5FBB765AA90}" ShortID="101437231">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.06410867938646E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.47255892255892E-02"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_08_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_08_WM" ID="{F488F677-5723-4B35-8C06-A5FBB765AA90}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_09_WM" ID="{6395B86E-FE9F-41EA-B021-6D1BA61D368C}" ShortID="693338969">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value Platform="Dev_Mac">False</Value>
+												<Value Platform="Victor_Linux">False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_09_WM" ID="{EF4361FA-3E00-4955-A403-59974FD6DC37}" ShortID="444954933">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_09_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_09_WM" ID="{EF4361FA-3E00-4955-A403-59974FD6DC37}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_10_WM" ID="{67641A92-18AF-4CAF-85D4-31B31A00E453}" ShortID="16163277">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_10_WM" ID="{56A7E972-BC1E-4C69-AEED-7CCA37E8FEAD}" ShortID="1062491740">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_10_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_10_WM" ID="{56A7E972-BC1E-4C69-AEED-7CCA37E8FEAD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_11_WM" ID="{B6AE235C-1E65-42D9-9799-2A785F4F661D}" ShortID="345281370">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_11_WM" ID="{48BD6AB6-B1CF-4102-B347-24167067239C}" ShortID="31324215">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.34633136924804E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.69266273849607E-02"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_11_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_11_WM" ID="{48BD6AB6-B1CF-4102-B347-24167067239C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_12_WM" ID="{015ABD5D-1E2F-49ED-A1CD-2D2DF95A9C52}" ShortID="235561998">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value Platform="Dev_Mac">False</Value>
+												<Value Platform="Victor_Linux">False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_12_WM" ID="{FF7F3F01-EE17-450D-A0B8-688A17432367}" ShortID="197832525">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.16780303030303E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.11414141414141E-02"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_12_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_12_WM" ID="{FF7F3F01-EE17-450D-A0B8-688A17432367}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_13_WM" ID="{8A93BB02-4F30-442F-8F4B-CE5F40187B3A}" ShortID="331909113">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value Platform="Dev_Mac">False</Value>
+												<Value Platform="Victor_Linux">False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_13_WM" ID="{75ABF016-C1BE-45C2-AC10-CB6275DF0263}" ShortID="552721010">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.50190796857463E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.25667789001122E-02"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_13_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_13_WM" ID="{75ABF016-C1BE-45C2-AC10-CB6275DF0263}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_14_WM" ID="{D4C29C61-C9DD-409C-8F49-B74B1744B96C}" ShortID="734143974">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_14_WM" ID="{E55EB2A1-8BEF-4053-A3F0-CA5A3CADC36C}" ShortID="666950858">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_14_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_14_WM" ID="{E55EB2A1-8BEF-4053-A3F0-CA5A3CADC36C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_15_WM" ID="{C86D2F81-01DC-4C07-8D47-4798454032A0}" ShortID="347561786">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_15_WM" ID="{C04FDA61-70EC-4D8C-B494-E8FBF54E81FC}" ShortID="552072377">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_15_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_15_WM" ID="{C04FDA61-70EC-4D8C-B494-E8FBF54E81FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_16_WM" ID="{AA0B9230-CA49-4F88-A669-C5FB1FB37AFD}" ShortID="829193541">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value Platform="Dev_Mac">False</Value>
+												<Value Platform="Victor_Linux">False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_16_WM" ID="{AE489E4A-4526-412E-81FD-8D97A442C15D}" ShortID="292351053">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_16_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_16_WM" ID="{AE489E4A-4526-412E-81FD-8D97A442C15D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Curious_Mutter_17_WM" ID="{3F73B5FE-3FFC-4F6B-8EBC-D78B85331908}" ShortID="559357632">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value Platform="Dev_Mac">False</Value>
+												<Value Platform="Victor_Linux">False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Curious_Mutter_17_WM" ID="{EE077289-8E46-4AB4-9DEE-19AF10CBF61D}" ShortID="551596388">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Curious_Mutter_17_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Curious_Mutter_17_WM" ID="{EE077289-8E46-4AB4-9DEE-19AF10CBF61D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Dev_Robot__Angry_Muttering" ID="{1F8F3C8C-4DF9-4672-B817-14FD20AB2783}" ShortID="592890111">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_02_WM" ID="{98C21462-75E8-4324-A6CC-A5D65121E587}" ShortID="39888450">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_02_WM" ID="{6793355D-A3C9-4695-896C-F0630C2A78E5}" ShortID="25932565">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_02_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_02_WM" ID="{6793355D-A3C9-4695-896C-F0630C2A78E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_03_WM" ID="{1D71AE3B-3737-40DE-9EBE-5AC4BD3C2CB8}" ShortID="534298710">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_03_WM" ID="{C4946502-4137-4657-8C4B-D2A721C6B3E5}" ShortID="1072794663">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_03_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_03_WM" ID="{C4946502-4137-4657-8C4B-D2A721C6B3E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_05_WM" ID="{82DA2E50-A63F-4549-9629-7C578B216AB4}" ShortID="571316974">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_05_WM" ID="{4F0BAFB8-10B7-487E-8D79-34EDE8AFE137}" ShortID="340499647">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_05_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_05_WM" ID="{4F0BAFB8-10B7-487E-8D79-34EDE8AFE137}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_07_WM" ID="{B2A75C1C-B697-4230-A8BE-36A0A96313C8}" ShortID="88346571">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_07_WM" ID="{01978028-52F9-485A-A5B4-926CD9CB89D5}" ShortID="997129844">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.94808891382965E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.46914515525627E-02"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_07_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_07_WM" ID="{01978028-52F9-485A-A5B4-926CD9CB89D5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_09_WM" ID="{04C33B01-EC94-4253-A8A4-86B14807E294}" ShortID="245442604">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_09_WM" ID="{CF7F36D4-50D5-4E08-A706-55F193219857}" ShortID="912563543">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_09_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_09_WM" ID="{CF7F36D4-50D5-4E08-A706-55F193219857}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_10_WM" ID="{C7120679-3ABB-4692-AF82-0C44EE94DC82}" ShortID="174960139">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_10_WM" ID="{6D40BECF-3127-4DAE-A027-AFBE153729CE}" ShortID="451306028">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_10_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_10_WM" ID="{6D40BECF-3127-4DAE-A027-AFBE153729CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_12_WM" ID="{8BE77381-4100-4E78-8530-D358FBE008CF}" ShortID="513033784">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_12_WM" ID="{3621EE08-C1D3-42B6-87E9-67C05A88F803}" ShortID="573230921">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_12_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_12_WM" ID="{3621EE08-C1D3-42B6-87E9-67C05A88F803}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_13_WM" ID="{43D0DF2C-CB3D-4B1A-845C-9E4F57F76660}" ShortID="30304308">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_13_WM" ID="{067CBFC6-E835-47B8-859E-FDAF4C293AC8}" ShortID="302034868">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_13_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_13_WM" ID="{067CBFC6-E835-47B8-859E-FDAF4C293AC8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_15_WM" ID="{F4321B14-5EB4-434B-8717-02FAB2223791}" ShortID="626310863">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_15_WM" ID="{D2B4BE68-BA91-4FB0-836E-560C1C67370C}" ShortID="55303634">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_15_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_15_WM" ID="{D2B4BE68-BA91-4FB0-836E-560C1C67370C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_16_WM" ID="{67149BEA-A8F8-44FF-B908-9071FD186982}" ShortID="727626569">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_16_WM" ID="{C2593708-4928-442C-A3C8-FDF9B87DA951}" ShortID="20554946">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_16_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_16_WM" ID="{C2593708-4928-442C-A3C8-FDF9B87DA951}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_17_WM" ID="{A455D43A-214F-4C5C-9C40-6B994AAC548E}" ShortID="67019803">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_17_WM" ID="{F9ED8420-499B-4366-B4BC-0D0F5E6F6D33}" ShortID="99456398">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_17_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_17_WM" ID="{F9ED8420-499B-4366-B4BC-0D0F5E6F6D33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vo__Shared_Angry_Muttering_19_WM" ID="{4A1C53C4-76AD-4A10-8826-2B5F2A91DE4A}" ShortID="675557060">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vo__Shared_Angry_Muttering_19_WM" ID="{D1AF8A43-09E6-411A-B3D3-83B4324DE352}" ShortID="967700349">
+											<Language>English(US)</Language>
+											<AudioFile>Robot_Vo__Shared_Angry_Muttering_19_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vo__Shared_Angry_Muttering_19_WM" ID="{D1AF8A43-09E6-411A-B3D3-83B4324DE352}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Dev_Robot__White_5sec" ID="{DCA847BB-1274-4DDA-B2D2-BF281D2A5F1E}" ShortID="97039833">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect Medium" ID="{C2242190-EA66-4EC8-A876-8713CEEBAAC8}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Dev_General_Bus" ID="{8F7BDC5A-741B-417E-91A0-0737215A1C92}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{B1DC8B47-2709-43A0-A44B-D5FCB05EF380}" ShortID="895251054" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="5"/>
+										<Property Name="WaveGain" Type="Real32" Value="-6"/>
+										<Property Name="WaveType" Type="int32" Value="4"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{B1DC8B47-2709-43A0-A44B-D5FCB05EF380}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Dev_Robot__Fx_Test_Sequence" ID="{4D69A56C-D115-48FF-BD1C-CFB016804BE4}" ShortID="196573553">
+							<PropertyList>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.8"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Robot_Vic_Sfx__Wake_Word_On_WM" ID="{42424849-AE53-4E4F-85CA-D4EAC8E730EE}" ShortID="12674650">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vic_Sfx__Wake_Word_On_WM" ID="{C0BE08F6-478C-4C0C-9608-B9174834E210}" ShortID="834582578">
+											<Language>SFX</Language>
+											<AudioFile>Robot_Vic_Sfx__Wake_Word_On_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vic_Sfx__Wake_Word_On_WM" ID="{C0BE08F6-478C-4C0C-9608-B9174834E210}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Robot_Vic_Sfx__Emote_Happy_Short" ID="{912109AB-C870-4740-8F6A-B5285CC63667}" ShortID="617942115">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Robot_Vic_Sfx__Emote_Happy_Short_01_WM" ID="{2C03F3D1-F04F-4D21-B7F7-416A2BEFEF55}" ShortID="906913938">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Emote_Happy_Short_01_WM" ID="{E8E4EF5A-879E-44CC-8B88-878E90FCE4CF}" ShortID="216881581">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Emote_Happy_Short_01_WM.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Emote_Happy_Short_01_WM" ID="{E8E4EF5A-879E-44CC-8B88-878E90FCE4CF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Emote_Happy_Short_02_WM" ID="{FAEEF459-69A6-471E-AEF9-3FFA83F0A56F}" ShortID="701538282">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Emote_Happy_Short_02_WM" ID="{27D92C0F-BB8C-4932-A40C-9A61A8508F7F}" ShortID="328565581">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Emote_Happy_Short_02_WM.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Emote_Happy_Short_02_WM" ID="{27D92C0F-BB8C-4932-A40C-9A61A8508F7F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Emote_Happy_Short_05_WM" ID="{FA318A55-0D22-473B-A329-8501663930FA}" ShortID="284006701">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Emote_Happy_Short_05_WM" ID="{35839F97-BA44-474C-B2F2-CC2854FB021E}" ShortID="1067148680">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Emote_Happy_Short_05_WM.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Emote_Happy_Short_05_WM" ID="{35839F97-BA44-474C-B2F2-CC2854FB021E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Emote_Happy_Short_07_WM" ID="{2FB72154-8960-4228-B5C9-CCE63BF5AE64}" ShortID="1002627484">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Emote_Happy_Short_07_WM" ID="{E27153BB-4702-43BB-B6F2-52D57FA35B23}" ShortID="218433128">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Emote_Happy_Short_07_WM.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Emote_Happy_Short_07_WM" ID="{E27153BB-4702-43BB-B6F2-52D57FA35B23}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Emote_Happy_Short_14_WM" ID="{E5F8C79D-EE0F-43DA-981B-D6397C300CCB}" ShortID="491191331">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Emote_Happy_Short_14_WM" ID="{7AE787F9-083D-4DD0-8F93-3A6306480E5C}" ShortID="72376538">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Emote_Happy_Short_14_WM.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Emote_Happy_Short_14_WM" ID="{7AE787F9-083D-4DD0-8F93-3A6306480E5C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Robot_Vic_Sfx__Camera_Flash_WM" ID="{BF52A5E9-748D-4B8F-B608-D90B965DB759}" ShortID="61858192">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vic_Sfx__Camera_Flash_WM" ID="{9F183749-657A-47C9-A671-55DF979B2195}" ShortID="100163230">
+											<Language>SFX</Language>
+											<AudioFile>Robot_Vic_Sfx__Camera_Flash_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vic_Sfx__Camera_Flash_WM" ID="{9F183749-657A-47C9-A671-55DF979B2195}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vic_Sfx__No_Wifi_WM" ID="{641D870C-52EA-4AB4-99D2-F5CC95FC2756}" ShortID="56318091">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vic_Sfx__No_Wifi_WM" ID="{F2E72B61-F355-4166-8763-1209BC2F913B}" ShortID="3936921">
+											<Language>SFX</Language>
+											<AudioFile>Robot_Vic_Sfx__No_Wifi_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vic_Sfx__No_Wifi_WM" ID="{F2E72B61-F355-4166-8763-1209BC2F913B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vic_Sfx__Timer_Beep_WM" ID="{75F51721-7942-4683-95BC-3BBDE7090EEE}" ShortID="760691328">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vic_Sfx__Timer_Beep_WM" ID="{C8E551F2-E54D-4E42-9D27-2F9041742238}" ShortID="908932215">
+											<Language>SFX</Language>
+											<AudioFile>Robot_Vic_Sfx__Timer_Beep_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vic_Sfx__Timer_Beep_WM" ID="{C8E551F2-E54D-4E42-9D27-2F9041742238}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vic_Sfx__Blackjack_Lose_WM" ID="{FB7C2D92-C4C2-4CA1-B868-7AB9504A7907}" ShortID="946555706">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vic_Sfx__Blackjack_Lose_WM" ID="{87AEACD0-540C-47AA-BE17-57620CB72324}" ShortID="131917627">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.40833984375"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Robot_Vic_Sfx__Blackjack_Lose_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vic_Sfx__Blackjack_Lose_WM" ID="{87AEACD0-540C-47AA-BE17-57620CB72324}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Robot_Vic_Sfx__Fist_Bump_WM" ID="{C2377B63-2C82-4BF9-82DA-978EA1652CD0}" ShortID="213131788">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vic_Sfx__Fist_Bump_WM" ID="{095A4B24-80CC-4B58-8EA4-74FCA0171EA9}" ShortID="376113429">
+											<Language>SFX</Language>
+											<AudioFile>Robot_Vic_Sfx__Fist_Bump_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vic_Sfx__Fist_Bump_WM" ID="{095A4B24-80CC-4B58-8EA4-74FCA0171EA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Robot_Vic_SFX_Lift_High_Down_Long_Curious_Stim_01" ID="{4A9CB36A-8494-4690-BC61-B9A8BAECA1F6}" ShortID="822767696">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Victor_Robot_SFX_Head_Lift" ID="{97344B79-D08A-4870-A4AA-3D816ED19544}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_04_WM" ID="{0DD5F78B-33C0-4436-A41B-DFE4C1618FDB}" ShortID="696259398">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_04_WM" ID="{5E7F73AA-A602-469E-8156-DF86FBD7C0D4}" ShortID="550057809">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Lift_High_Down_Long_Curious_04_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="813179847"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_04_WM" ID="{5E7F73AA-A602-469E-8156-DF86FBD7C0D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_01_WM" ID="{D19CB154-D624-42BA-9075-40DDD9833679}" ShortID="961833307">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_01_WM" ID="{0D55F635-D002-4242-84A4-61F6B932799E}" ShortID="335451271">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Lift_High_Down_Long_Curious_01_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="593753384"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_01_WM" ID="{0D55F635-D002-4242-84A4-61F6B932799E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_06_WM" ID="{DE4E4F60-8747-45F9-84A6-DAB881BB5B0D}" ShortID="3502837">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_06_WM" ID="{88EDC246-752F-449A-B057-2D0102833985}" ShortID="710622523">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Lift_High_Down_Long_Curious_06_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="985155684"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_06_WM" ID="{88EDC246-752F-449A-B057-2D0102833985}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_05_WM" ID="{84A60BD8-8CF6-4B01-8852-CC0B63A87E58}" ShortID="958132642">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_05_WM" ID="{288F2FBE-38CF-4CC0-A552-502EE31BF934}" ShortID="942571175">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Lift_High_Down_Long_Curious_05_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="493422530"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_05_WM" ID="{288F2FBE-38CF-4CC0-A552-502EE31BF934}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_02_WM" ID="{08ABA928-59F2-4272-A50D-5ED6F319219E}" ShortID="714558423">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_02_WM" ID="{CC8E67E1-A053-493C-9977-700E983D508B}" ShortID="86259554">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Lift_High_Down_Long_Curious_02_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="880412283"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_02_WM" ID="{CC8E67E1-A053-493C-9977-700E983D508B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_03_WM" ID="{C242AD35-AFEC-4B47-8B04-396BAE026F00}" ShortID="620263144">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_03_WM" ID="{F22A68BE-059C-4447-BF8E-17E75DB96940}" ShortID="1055800441">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Lift_High_Down_Long_Curious_03_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="847263232"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_03_WM" ID="{F22A68BE-059C-4447-BF8E-17E75DB96940}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Robot_Vic_SFX_Head_Down_Short_Curious_Stim_01" ID="{C4F11EE6-8F38-4F85-B709-1EA01B57C809}" ShortID="198228854">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Victor_Robot_SFX_Head_Lift" ID="{97344B79-D08A-4870-A4AA-3D816ED19544}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Short_Curious_01_WM" ID="{DD45EDF1-C62A-4FAC-A2CB-268FCF39DADE}" ShortID="32865404">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_01_WM" ID="{3E1C5308-6E82-4C22-B032-9CB4F57874EA}" ShortID="719326686">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Short_Curious_01_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Dev_Mac" ID="178193354"/>
+														<File Platform="Victor_Linux" ID="43456441"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_01_WM" ID="{3E1C5308-6E82-4C22-B032-9CB4F57874EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Short_Curious_02_WM" ID="{0E8AB893-FBF7-41FB-9F45-055BF051CE77}" ShortID="729308777">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_02_WM" ID="{D1BFB3C7-F64E-4C27-9F6A-83FB2E3AB709}" ShortID="383613920">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Short_Curious_02_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Dev_Mac" ID="823974075"/>
+														<File Platform="Victor_Linux" ID="463460985"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_02_WM" ID="{D1BFB3C7-F64E-4C27-9F6A-83FB2E3AB709}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Short_Curious_03_WM" ID="{765AF419-E4F0-4F9F-AD32-78E9F9E10805}" ShortID="836316503">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_03_WM" ID="{D35E9C2A-100F-43E5-9CB5-4CBA05D2D12F}" ShortID="880636059">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Short_Curious_03_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Dev_Mac" ID="165817779"/>
+														<File Platform="Victor_Linux" ID="334539066"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_03_WM" ID="{D35E9C2A-100F-43E5-9CB5-4CBA05D2D12F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Short_Curious_04_WM" ID="{2BC20A89-EFBA-4326-B386-3C909D6FDD0D}" ShortID="770943344">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_04_WM" ID="{6ECFBA80-EB44-4578-96E4-84ED1289C839}" ShortID="99410543">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Short_Curious_04_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="244909330"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_04_WM" ID="{6ECFBA80-EB44-4578-96E4-84ED1289C839}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Short_Curious_05_WM" ID="{55F5020B-1F79-4FA1-A139-DCDAF8E9C9CA}" ShortID="10402115">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_05_WM" ID="{078BCCC5-4B54-4F87-BD72-97E8A7ADC47C}" ShortID="145539270">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Short_Curious_05_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Dev_Mac" ID="569402253"/>
+														<File Platform="Victor_Linux" ID="21571528"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_05_WM" ID="{078BCCC5-4B54-4F87-BD72-97E8A7ADC47C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Robot_Vic_Sfx__Tread_Happy_Long_Stim_01" ID="{641AA8CB-BDF9-4502-966F-6FC4F9748C2B}" ShortID="458568795">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Robot_Vic_Sfx__Tread_Happy_Long_03_WM" ID="{E8B94AFE-11C1-4C9A-8478-3AB47FF0F122}" ShortID="172344620">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Victor_Robot_SFX_Procedural" ID="{790078FA-6943-42DB-B458-6D161D98A3CE}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Tread_Happy_Long_03_WM" ID="{0B4D26E9-3657-4181-AF03-3C4042C4C569}" ShortID="124999678">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Tread_Happy_Long_03_WM.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Tread_Happy_Long_03_WM" ID="{0B4D26E9-3657-4181-AF03-3C4042C4C569}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Tread_Happy_Long_02_WM" ID="{BDAC391D-582A-488F-A9C1-4A959D8298DA}" ShortID="715380233">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Victor_Robot_SFX_Procedural" ID="{790078FA-6943-42DB-B458-6D161D98A3CE}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Tread_Happy_Long_02_WM" ID="{E55E4780-C5FE-4A9F-BFD0-80F43A450EEC}" ShortID="106124069">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Tread_Happy_Long_02_WM.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Tread_Happy_Long_02_WM" ID="{E55E4780-C5FE-4A9F-BFD0-80F43A450EEC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Tread_Happy_Long_01_WM" ID="{C4556A59-8C47-4970-BE70-FE66001D9580}" ShortID="232014419">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Victor_Robot_SFX_Procedural" ID="{790078FA-6943-42DB-B458-6D161D98A3CE}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Tread_Happy_Long_01_WM" ID="{A8531CAA-3F3A-4A0A-90BC-E133748825EE}" ShortID="190098477">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Tread_Happy_Long_01_WM.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Tread_Happy_Long_01_WM" ID="{A8531CAA-3F3A-4A0A-90BC-E133748825EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Robot_Vic_SFX_Head_Down_Short_Curious_Stim_01" ID="{C4F11EE6-8F38-4F85-B709-1EA01B57C809}"/>
+								<ItemRef Name="Robot_Vic_Sfx__Emote_Happy_Short" ID="{912109AB-C870-4740-8F6A-B5285CC63667}"/>
+								<ItemRef Name="Robot_Vic_Sfx__Blackjack_Lose_WM" ID="{FB7C2D92-C4C2-4CA1-B868-7AB9504A7907}"/>
+								<ItemRef Name="Robot_Vic_SFX_Lift_High_Down_Long_Curious_Stim_01" ID="{4A9CB36A-8494-4690-BC61-B9A8BAECA1F6}"/>
+								<ItemRef Name="Robot_Vic_Sfx__Camera_Flash_WM" ID="{BF52A5E9-748D-4B8F-B608-D90B965DB759}"/>
+								<ItemRef Name="Robot_Vic_SFX_Head_Down_Short_Curious_Stim_01" ID="{C4F11EE6-8F38-4F85-B709-1EA01B57C809}"/>
+								<ItemRef Name="Robot_Vic_Sfx__Fist_Bump_WM" ID="{C2377B63-2C82-4BF9-82DA-978EA1652CD0}"/>
+								<ItemRef Name="Robot_Vic_Sfx__No_Wifi_WM" ID="{641D870C-52EA-4AB4-99D2-F5CC95FC2756}"/>
+								<ItemRef Name="Robot_Vic_SFX_Lift_High_Down_Long_Curious_Stim_01" ID="{4A9CB36A-8494-4690-BC61-B9A8BAECA1F6}"/>
+								<ItemRef Name="Robot_Vic_Sfx__No_Wifi_WM" ID="{641D870C-52EA-4AB4-99D2-F5CC95FC2756}"/>
+								<ItemRef Name="Robot_Vic_SFX_Head_Down_Short_Curious_Stim_01" ID="{C4F11EE6-8F38-4F85-B709-1EA01B57C809}"/>
+								<ItemRef Name="Robot_Vic_Sfx__Timer_Beep_WM" ID="{75F51721-7942-4683-95BC-3BBDE7090EEE}"/>
+								<ItemRef Name="Robot_Vic_Sfx__Wake_Word_On_WM" ID="{42424849-AE53-4E4F-85CA-D4EAC8E730EE}"/>
+								<ItemRef Name="Robot_Vic_Sfx__Tread_Happy_Long_Stim_01" ID="{641AA8CB-BDF9-4502-966F-6FC4F9748C2B}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Dev_Device" ID="{321F2F5B-BEF5-4799-A86D-5FE77BF53B22}" ShortID="280348264">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Dev_External_Device" ID="{1749BB26-74BE-4DB8-A1D9-E4FA3330ACA1}" ShortID="127433169">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Anki Streaming Wave Portal" ID="{9D710A21-225E-4AA5-8379-9A5FD03E9B50}" ShortID="209845219" PluginName="Anki Streaming Wave Portal" CompanyID="300" PluginID="110">
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Anki Streaming Wave Portal" ID="{9D710A21-225E-4AA5-8379-9A5FD03E9B50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Tone_Generator_Device" ID="{CFC2E537-F101-46C8-9B4E-715AA59559F5}" ShortID="497728128">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{08B8488A-AC59-4DBD-9D1C-555F48EAE54F}" ShortID="290021808" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="0.6"/>
+										<Property Name="StartFreq" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{DBCD9F71-D9EF-475E-ACD5-C02753C5406A}" ShortID="1062641094">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="dev_tone_freq" ID="{40C28B65-9A62-43B6-B090-5201B27E1F8B}" WorkUnitID="{D7D36728-07ED-45F4-872F-DF58B94CA436}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{F1058170-5733-4492-BF9C-9B3551F0F973}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>20</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>20000</XPos>
+																<YPos>20000</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{08B8488A-AC59-4DBD-9D1C-555F48EAE54F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Dev_Sfx_QA" ID="{F80CB41D-AC07-4DDE-A27F-825EB425A793}" ShortID="614986129">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>80</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect Medium" ID="{C2242190-EA66-4EC8-A876-8713CEEBAAC8}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Dev_General_Bus" ID="{8F7BDC5A-741B-417E-91A0-0737215A1C92}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Robot_Sfx__Scrn_Surprised_Long_01_WM" ID="{4C818191-9FAA-4168-A7DE-150161D73C67}" ShortID="271504724">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>150</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Sfx__Scrn_Surprised_Long_01_WM" ID="{670E1EFF-08B8-4E2C-B9D0-094AF78A69DF}" ShortID="178161769">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Sfx__Scrn_Surprised_Long_01_WM.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File Platform="Victor_Linux" ID="880870144"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Sfx__Scrn_Surprised_Long_01_WM" ID="{670E1EFF-08B8-4E2C-B9D0-094AF78A69DF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Sfx__Scrn_Sad_Long_01_WM" ID="{93EBD197-9CA3-4702-871B-40D8336016C5}" ShortID="708395489">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>150</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Sfx__Scrn_Sad_Long_01_WM" ID="{63BBE6FB-74CF-4E27-A393-34B49606A242}" ShortID="221317702">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Sfx__Scrn_Sad_Long_01_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Sfx__Scrn_Sad_Long_01_WM" ID="{63BBE6FB-74CF-4E27-A393-34B49606A242}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Sfx__Scrn_Angry_Long_01_WM" ID="{4D23B735-0B3D-461C-A95B-5386ABC9F665}" ShortID="360359554">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>150</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Sfx__Scrn_Angry_Long_01_WM" ID="{960720FF-F114-4152-89D4-A572645F80D3}" ShortID="680145437">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Sfx__Scrn_Angry_Long_01_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Sfx__Scrn_Angry_Long_01_WM" ID="{960720FF-F114-4152-89D4-A572645F80D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Dev_Squawk_Testing" ID="{B65D3353-EF04-4977-ACA8-20641E88E536}" ShortID="665038596">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{6C6ACA1D-BF1D-4DEF-B0D4-C8AA95101E21}" ShortID="549743931">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Dev_Squawk_Volume" ID="{EDE1D113-6ABE-447C-94A1-6E8F3670A4FD}" WorkUnitID="{D7D36728-07ED-45F4-872F-DF58B94CA436}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{2A427090-23CA-44D2-A3ED-4FE09252019C}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Dev_Squawk_Bus" ID="{3171B6A6-06BF-4297-95FB-7FF3F9524B90}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Robot_Vic_Sfx__No_Wifi_WM" ID="{E1D9BE3A-0260-4B09-8908-E3BFC2B1BD71}" ShortID="330469671">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__No_Wifi_WM" ID="{B41E74D5-74A0-435A-AFB8-1C30FEB7012E}" ShortID="132695882">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__No_Wifi_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__No_Wifi_WM" ID="{B41E74D5-74A0-435A-AFB8-1C30FEB7012E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Wake_Word_On_WM" ID="{4C718534-A9BC-469B-838E-3304BFD512E6}" ShortID="370593971">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Wake_Word_On_WM" ID="{F4EACB44-D10E-4340-8268-B461A95B3F82}" ShortID="893695355">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Wake_Word_On_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Wake_Word_On_WM" ID="{F4EACB44-D10E-4340-8268-B461A95B3F82}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Timer_Beep_WM" ID="{28675D29-DF93-4078-88AE-76111CF6C053}" ShortID="57858097">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Timer_Beep_WM" ID="{4AE7F326-4794-4A89-B72A-4D82CB223183}" ShortID="758246951">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Timer_Beep_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Timer_Beep_WM" ID="{4AE7F326-4794-4A89-B72A-4D82CB223183}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Camera_Flash_WM" ID="{25DC26FB-9349-45EC-A5A9-AD9094EE7926}" ShortID="831975975">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Camera_Flash_WM" ID="{B654CCFE-C1E0-4206-AE43-1ED03213583E}" ShortID="685558094">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Camera_Flash_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Camera_Flash_WM" ID="{B654CCFE-C1E0-4206-AE43-1ED03213583E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Blackjack_Lose_WM" ID="{D8C4C061-7305-4D51-B037-18553D77F9E8}" ShortID="278039613">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Blackjack_Lose_WM" ID="{86846CB6-6D05-42BE-8E09-FB01A90B810A}" ShortID="530382434">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.40833984375"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Blackjack_Lose_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Blackjack_Lose_WM" ID="{86846CB6-6D05-42BE-8E09-FB01A90B810A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Fist_Bump_WM" ID="{1C801172-BEC6-4DBF-AD7A-A4B10226BA6D}" ShortID="525779205">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Fist_Bump_WM" ID="{8D7ECE58-1814-46DC-A5ED-0A60F024615F}" ShortID="450506169">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Fist_Bump_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Fist_Bump_WM" ID="{8D7ECE58-1814-46DC-A5ED-0A60F024615F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Emote_Happy_Short_01_WM" ID="{DDB6141F-89D0-4D58-B316-086E81BBC60C}" ShortID="820518810">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Emote_Happy_Short_01_WM" ID="{D8EDC156-4193-4D2D-A344-8D5252C6B0A7}" ShortID="1038650406">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Emote_Happy_Short_01_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Emote_Happy_Short_01_WM" ID="{D8EDC156-4193-4D2D-A344-8D5252C6B0A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Tread_Happy_Long_01_WM" ID="{AF971ABE-A1D8-4D47-8589-8D8F51B8F1B4}" ShortID="723571218">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>150</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot_SFX_Procedural" ID="{790078FA-6943-42DB-B458-6D161D98A3CE}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Tread_Happy_Long_01_WM" ID="{5F972105-B724-48F8-B033-2EEA6679081C}" ShortID="208274446">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Tread_Happy_Long_01_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Tread_Happy_Long_01_WM" ID="{5F972105-B724-48F8-B033-2EEA6679081C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Head_Down_Short_Curious_01_WM" ID="{EEC16345-9FCD-4E0D-AF4E-C2729BB0A8EC}" ShortID="758852234">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_01_WM" ID="{E1EED7DE-9255-43C3-B0E0-F6D954F91F04}" ShortID="71453838">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Head_Down_Short_Curious_01_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Short_Curious_01_WM" ID="{E1EED7DE-9255-43C3-B0E0-F6D954F91F04}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_01_WM" ID="{ECED4D88-D697-4140-9062-470516BE2ED6}" ShortID="547089984">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_01_WM" ID="{20ECC6FF-185F-4E8C-BEFF-26568D39195E}" ShortID="745146680">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Lift_High_Down_Long_Curious_01_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Lift_High_Down_Long_Curious_01_WM" ID="{20ECC6FF-185F-4E8C-BEFF-26568D39195E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

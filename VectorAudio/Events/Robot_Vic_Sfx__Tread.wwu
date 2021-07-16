@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{71E80F48-3FC5-4240-A569-DC750E6F92B2}" SchemaVersion="85" RootDocumentID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}">
+	<Events>
+		<WorkUnit Name="Robot_Vic_Sfx__Tread" ID="{71E80F48-3FC5-4240-A569-DC750E6F92B2}" OwnerID="{2681AECF-C4FE-49C4-8BB1-7D67037AD367}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Stop__Robot_Vic_Sfx__Tread_Loop_Stop" ID="{879D8FD9-D35B-4239-9303-FBF898CB7D6D}">
+					<ChildrenList>
+						<Action Name="" ID="{F43A0DD4-593F-4D40-B803-AA302699763A}" ShortID="916125155">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Drive" ID="{B3C0DC69-7458-4A05-9BAF-F10183BB5C5A}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D34CF02C-0FDD-4FFD-85D4-DEC0D5F75FFD}" ShortID="184611051">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="39"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Tread_Speed" ID="{98C33070-F370-4A68-8130-F686150B29D8}" WorkUnitID="{C84762C6-EB94-4AD7-9CF4-EA9D69215888}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Loop_Play" ID="{6F85CFCC-2032-42A0-A70D-CA5C617D6584}">
+					<ChildrenList>
+						<Action Name="" ID="{66E29FB5-5814-414B-9D8F-8243114FF56B}" ShortID="386811952">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Drive" ID="{B3C0DC69-7458-4A05-9BAF-F10183BB5C5A}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Sad" ID="{45908807-5E9C-4F98-B37F-AFBE6CFB277C}">
+					<ChildrenList>
+						<Action Name="" ID="{2F521CC9-167B-42C3-B011-F0A7C2BD2AA6}" ShortID="715085054">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Sad_Stim" ID="{C64C428B-C849-4BF2-BCE9-2B00A6E51809}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Curious_Long" ID="{3BC505E1-699C-494C-92FC-DA8AD0B1249A}">
+					<ChildrenList>
+						<Action Name="" ID="{9553F238-DBB7-4603-8075-6560509F033A}" ShortID="774527449">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Curious_Long_Stim" ID="{2FFC00C7-B393-4B89-B5C1-80A66C942015}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Sad_Long" ID="{4305929B-C317-4520-B1FA-94F2D1672625}">
+					<ChildrenList>
+						<Action Name="" ID="{F1480536-1461-478F-B4BF-815539D193C1}" ShortID="671649081">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Sad_Long_Stim" ID="{D0E89C2F-CDC7-41EB-9149-E4FD9376B098}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Happy" ID="{D2C0E172-7F34-4E1D-9253-FDD42771F0BD}">
+					<ChildrenList>
+						<Action Name="" ID="{EF5BDD4F-7D5F-4A53-9617-504A6C32686F}" ShortID="314352446">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Happy_Stim" ID="{52E9D2BC-CA18-48DB-8633-698E7DCAF5A4}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Surprised" ID="{FD80EC0A-81EA-4615-91B7-6AC1C934C582}">
+					<ChildrenList>
+						<Action Name="" ID="{FE0B67DB-352C-4EB8-A212-A8B5A100393C}" ShortID="1026306117">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Surprised_Stim" ID="{5BDDD4FF-F2A6-4250-8E48-5AE13C127BF4}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Curious" ID="{369EA3F4-D192-419C-A959-D9FCF970CAAD}">
+					<ChildrenList>
+						<Action Name="" ID="{6D9EE75B-973E-4937-BB41-6C7B9CE1857A}" ShortID="696194710">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Curious_Stim" ID="{751E9A97-69F2-4050-9DF5-B5AB80E0958A}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Angry_Long" ID="{CD35891A-D045-4F1B-9279-80A5129859C1}">
+					<ChildrenList>
+						<Action Name="" ID="{61B584FF-CD32-440F-8E02-7DF21702BFE4}" ShortID="449151174">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic__Sfx_Tread_Angry_Long_Stim" ID="{06B62B39-F9BB-4EEE-8A83-B3731E9E4235}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Angry" ID="{EC65CDA5-216A-4D01-BB6D-1CD5C71F059B}">
+					<ChildrenList>
+						<Action Name="" ID="{4C978D7E-1EF1-48A0-99B5-52DD76064222}" ShortID="94677916">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Angry_Stim" ID="{3A6EB2DD-2C9D-4022-9A47-F85E3E34E6C7}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Surprised_Long" ID="{93162E84-C5EA-4430-8624-CB09FD79D66D}">
+					<ChildrenList>
+						<Action Name="" ID="{0A3DCDA9-7694-47FD-B335-C4B350DF5FF7}" ShortID="1014255364">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Surprised_Long_Stim" ID="{EF1B36F5-22F2-4EAF-9D4C-ACB4FBCC8484}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Tread_Happy_Long" ID="{A3CC6001-13E3-41B3-8C15-E3C24D40D4A9}">
+					<ChildrenList>
+						<Action Name="" ID="{A3571739-5218-4C84-A27D-C77FF9DE1065}" ShortID="1062380130">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Tread_Happy_Long_Stim" ID="{60F647DD-DEE3-4CC0-BE0C-C20512326AFD}" WorkUnitID="{C7980AD0-B744-43BB-9614-6EFB0C614810}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

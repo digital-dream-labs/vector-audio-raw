@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D7D36728-07ED-45F4-872F-DF58B94CA436}" SchemaVersion="85">
+	<GameParameters>
+		<WorkUnit Name="Victor" ID="{D7D36728-07ED-45F4-872F-DF58B94CA436}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Victor Robot" ID="{988B18FE-E31F-45AF-9AE8-D053B9B55D97}" ShortID="1009933283">
+					<ChildrenList>
+						<WorkUnit Name="Head_RTPCs" ID="{5EAC22F0-5938-4883-9941-A49181378B83}" PersistMode="Reference"/>
+						<WorkUnit Name="Lift_RTPCs" ID="{22EC9E76-D456-468F-A312-6B7FA81A5657}" PersistMode="Reference"/>
+						<WorkUnit Name="Tread_RTPCs" ID="{C84762C6-EB94-4AD7-9CF4-EA9D69215888}" PersistMode="Reference"/>
+						<WorkUnit Name="Moods" ID="{3565DBC8-DADB-4BC8-86A3-3CA9DD2175D6}" PersistMode="Reference"/>
+						<WorkUnit Name="Robot_Vic_Front_End_Volume_RTPCs" ID="{C329FBF8-7FC2-4135-A859-833123B380E0}" PersistMode="Reference"/>
+						<WorkUnit Name="Vic_Robot_External_RTPCs" ID="{8572D491-FE1E-42A1-BA62-CE3456A50D98}" PersistMode="Reference"/>
+						<WorkUnit Name="Meter RTPCs" ID="{8C2834C0-99B2-48BF-A193-EDAA8A6D0F71}" PersistMode="Reference"/>
+						<WorkUnit Name="Screen RTPCs" ID="{9E13E6ED-C514-4BFE-9E0F-80B93C01455C}" PersistMode="Reference"/>
+						<GameParameter Name="Robot_Vic_Environment_Ambient_Volume" ID="{1654F10A-5ECF-4D37-B3F5-7F1F73AC9B45}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Robot_Vic_Timer_Countdown" ID="{01407953-D1C2-4A23-B0B9-A30E4230577E}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="6"/>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="100"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Robot_Vic_Planning" ID="{8626BF23-6CEA-441B-884F-20CE7F67B6A7}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="100"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="event_volume" ID="{65AAA66C-C5DF-4E2E-867D-149CF9F4B463}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="dev_tone_freq" ID="{40C28B65-9A62-43B6-B090-5201B27E1F8B}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1000"/>
+								<Property Name="Max" Type="Real64" Value="20000"/>
+								<Property Name="Min" Type="Real64" Value="20"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Robot_Vic_How_Old_Speed" ID="{312ED4B9-87C7-4060-B0FB-1243AFF72EB2}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.4"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.6"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="70"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="70"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Robot_Vic_Shaking" ID="{36B8366A-8A29-4B08-A4CC-9DDEBBFE1CF8}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="7"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="70"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="70"/>
+							</PropertyList>
+						</GameParameter>
+						<WorkUnit Name="SDK_RTPCs" ID="{CD8EA6CE-3376-474D-826A-20CA71A0820E}" PersistMode="Reference"/>
+						<GameParameter Name="Robot_Vic_Held_Trust" ID="{23A0C020-A119-4479-8D84-B4BBF996E05E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Dev_Squawk_Volume" ID="{EDE1D113-6ABE-447C-94A1-6E8F3670A4FD}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{652B0F4F-4819-4994-A8D1-F513BF782576}" SchemaVersion="85">
+	<Queries>
+		<WorkUnit Name="Default Work Unit" ID="{652B0F4F-4819-4994-A8D1-F513BF782576}" PersistMode="Standalone">
+			<ChildrenList>
+				<Query Name="Non Streaming Sound" ID="{95E80CB9-E744-41D2-9222-BB5F3D0F9EDD}">
+					<PropertyList>
+						<Property Name="ObjectType" Type="int32" Value="800"/>
+						<Property Name="Platform" Type="int16" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<SearchCriteria Name="PropertyValue" ID="{DB59B36B-329A-4CA9-8F5B-FB730CF3F16D}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
+							<PropertyList>
+								<Property Name="PropertyName" Type="string" Value="IsStreamingEnabled"/>
+							</PropertyList>
+						</SearchCriteria>
+					</ChildrenList>
+				</Query>
+				<Query Name="Streaming Sound No Zero Latency" ID="{0A7D5C28-0A61-46E5-8F2B-D945D11BF23F}">
+					<PropertyList>
+						<Property Name="ObjectType" Type="int32" Value="800"/>
+					</PropertyList>
+					<ChildrenList>
+						<SearchCriteria Name="PropertyValue" ID="{432C3206-6602-4448-8EE3-64EA404B8619}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
+							<PropertyList>
+								<Property Name="IsChecked" Type="bool" Value="True"/>
+								<Property Name="PropertyName" Type="string" Value="IsStreamingEnabled"/>
+							</PropertyList>
+						</SearchCriteria>
+						<SearchCriteria Name="PropertyValue" ID="{2A4286BE-339D-48C9-8EFC-3C31DE6BF495}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
+							<PropertyList>
+								<Property Name="PropertyName" Type="string" Value="IsZeroLantency"/>
+							</PropertyList>
+						</SearchCriteria>
+					</ChildrenList>
+				</Query>
+				<Query Name="Streaming Sound Zero Latency" ID="{A79CA1C4-63A3-4E9D-B257-ED29003DC2EE}">
+					<PropertyList>
+						<Property Name="ObjectType" Type="int32" Value="800"/>
+					</PropertyList>
+					<ChildrenList>
+						<SearchCriteria Name="PropertyValue" ID="{06DBBD19-743F-4F55-9018-E97B9A7DA75C}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
+							<PropertyList>
+								<Property Name="IsChecked" Type="bool" Value="True"/>
+								<Property Name="PropertyName" Type="string" Value="IsStreamingEnabled"/>
+							</PropertyList>
+						</SearchCriteria>
+						<SearchCriteria Name="PropertyValue" ID="{451CB911-1E07-4FFD-A10D-138A7CED6255}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
+							<PropertyList>
+								<Property Name="IsChecked" Type="bool" Value="True"/>
+								<Property Name="PropertyName" Type="string" Value="IsZeroLantency"/>
+							</PropertyList>
+						</SearchCriteria>
+					</ChildrenList>
+				</Query>
+				<Query Name="User-Defined Aux Bus" ID="{2F25B38A-91A8-47C4-9539-9491185B9D4C}">
+					<Comment>This is to send cozmo events to bus set in game</Comment>
+					<PropertyList>
+						<Property Name="ObjectType" Type="int32" Value="800"/>
+						<Property Name="StartFromHereObject" Type="string" Value="{477C9FF1-42CB-4C0E-BE89-AC4744F7B867}"/>
+					</PropertyList>
+					<ChildrenList>
+						<SearchCriteria Name="PropertyValue" ID="{9EDA0FFA-05D8-45E9-9006-F557A36F2E20}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
+							<PropertyList>
+								<Property Name="PropertyName" Type="string" Value="UseGameAuxSends"/>
+							</PropertyList>
+						</SearchCriteria>
+					</ChildrenList>
+				</Query>
+				<Query Name="Master_Bus_Routing" ID="{9923D56E-9EE2-4DD7-8312-D99707BE905A}">
+					<ChildrenList>
+						<SearchCriteria Name="RoutingOutput Bus" ID="{77C896EC-F211-47B4-A5E1-2744C0C93076}" SearchOperationID="{A6133310-6FD3-4F2B-A106-827C18BEB4D9}">
+							<PropertyList>
+								<Property Name="OutputBus" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+							</PropertyList>
+						</SearchCriteria>
+					</ChildrenList>
+				</Query>
+			</ChildrenList>
+		</WorkUnit>
+	</Queries>
+</WwiseDocument>

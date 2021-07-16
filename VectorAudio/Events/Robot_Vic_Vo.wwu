@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{011C3BF9-C9DA-45CC-8096-A404A30CB65F}" SchemaVersion="85" RootDocumentID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}">
+	<Events>
+		<WorkUnit Name="Robot_Vic_Vo" ID="{011C3BF9-C9DA-45CC-8096-A404A30CB65F}" OwnerID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Robot_Vic_Vo__External" ID="{A7E1D73F-55AE-499B-A756-7007C4570879}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

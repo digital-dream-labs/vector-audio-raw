@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9D34359F-C2C6-4678-96ED-18B1A52A5FF1}" SchemaVersion="85">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{9D34359F-C2C6-4678-96ED-18B1A52A5FF1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Robot_Bus_Peak_Limiter" ID="{EE5ADE29-2466-4768-8B48-11701B04C5A0}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+					<PropertyList>
+						<Property Name="ChannelLink" Type="bool" Value="False"/>
+						<Property Name="LookAhead" Type="Real32" Value="0.009"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="Ratio" Type="Real32" Value="10.8"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.041"/>
+						<Property Name="Threshold" Type="Real32" Value="-1"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot_Bus_Eq_MasterCurve" ID="{BC3F84FE-AB7F-44FC-8F15-0A2D0D3392AA}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="835"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="1359"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="5091"/>
+						<Property Name="GainBand1" Type="Real32" Value="2"/>
+						<Property Name="GainBand2" Type="Real32" Value="-2.5"/>
+						<Property Name="GainBand3" Type="Real32" Value="-4"/>
+						<Property Name="OutputLevel" Type="Real32" Value="1.5"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="2.1"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="4.2"/>
+						<Property Name="QFactorBand3" Type="Real32" Value="1.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot_Bus_Eq_HiLowPass" ID="{1338A318-0541-4A44-855C-90255844FA19}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="333"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="14298"/>
+						<Property Name="GainBand2" Type="Real32" Value="-4.5"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Tremolo" ID="{51EE01EA-2509-47C0-9202-9CE405847802}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+					<PropertyList>
+						<Property Name="ModDepth" Type="Real32" Value="0"/>
+						<Property Name="ModFrequency" Type="Real32" Value="11.32"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Harmonizer" ID="{819B414B-E2C4-4AD3-AD98-22212946DEDA}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+					<PropertyList>
+						<Property Name="Voice1FilterFrequency" Type="Real32" Value="20000"/>
+						<Property Name="Voice1FilterType" Type="int32" Value="2"/>
+						<Property Name="Voice1Pitch" Type="Real32" Value="400"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot_Vic_TTS_Pre_Vocoder_Gain" ID="{2B921803-6CE0-4725-87E3-E7FCD8C7F430}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="8"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

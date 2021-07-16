@@ -1,0 +1,81 @@
+#!/bin/bash  
+_REPO_LOCATION=.
+_FIX_M4A_TIMESTAMPS_SCRIPT_PATH="$_REPO_LOCATION/build-scripts/fix-m4a-timestamps-in-wwise-file.py"
+_BUNDLE_METADATA_PYTHON_SCRIPT_PATH="$_REPO_LOCATION/build-scripts/bundle-metadata-products.py"
+_BUNDLE_ASSETS_PYTHON_SCRIPT_PATH="$_REPO_LOCATION/build-scripts/bundle-soundbank-products.py"
+_ORGANIZE_ASSETS_PYTHON_SCRIPT_PATH="$_REPO_LOCATION/build-scripts/organize-soundbank-products.py"
+
+_PROJ_DIR="$_REPO_LOCATION/VictorAudio"
+_METADATA_DIR="$_REPO_LOCATION/metadata"
+_GSB_DIR="$_PROJ_DIR/GeneratedSoundBanks"
+
+_SOUNDS_DIR_MAC="$_GSB_DIR/Dev_Mac"
+_SOUNDS_DIR_ANDROID="$_GSB_DIR/Victor_Linux"
+
+_ASSETS_DIR="assets"
+_TMP_OUTPUT_DIR_MAC="$_ASSETS_DIR/mac"
+_TMP_OUTPUT_DIR_ANDROID="$_ASSETS_DIR/android"
+
+_APP_METADATA="$_ASSETS_DIR/metadata"
+
+_SKU_DIR="victor_robot"
+_VR_BANK_LIST_PATH="$_METADATA_DIR/victor-banks-list.json"
+_VR_MAC="$_ASSETS_DIR/$_SKU_DIR/mac"
+_VR_ROBOT="$_ASSETS_DIR/$_SKU_DIR/vector"
+
+
+#rm -rf $_ASSETS_DIR
+mkdir -p $_ASSETS_DIR
+
+mkdir -p $_TMP_OUTPUT_DIR_MAC
+mkdir -p $_TMP_OUTPUT_DIR_ANDROID
+mkdir -p $_APP_METADATA
+mkdir -p $_VR_MAC
+mkdir -p $_VR_ROBOT
+
+
+# Check exit code and maybe send a failure message to slack
+function CheckExitCode() {
+    if [ $1 -ne 0 ]; then
+      echo "INFO - Exiting script. $error_message Build failed. exitCode $2"
+      exit $1
+    fi
+}
+
+# Copy metadata files .txt .json .xml
+python $_BUNDLE_METADATA_PYTHON_SCRIPT_PATH $_GSB_DIR $_APP_METADATA
+CheckExitCode $?
+
+# Fix up the Init.bnk for the plugins that are on Vector but not in the wwise
+cp Init.bnk $_GSB_DIR/Victor_Linux
+
+# Fix M4A time stamps so we can compare hash of current assets
+# Mac
+#python $_FIX_M4A_TIMESTAMPS_SCRIPT_PATH $_SOUNDS_DIR_MAC
+#CheckExitCode $? "There was a problem fixing the timestamps in the .bnk/.wem files in $_SOUNDS_DIR_MAC."
+
+# Bundle assets
+# Victor - Robot (Webots)
+python $_BUNDLE_ASSETS_PYTHON_SCRIPT_PATH $_SOUNDS_DIR_MAC $_TMP_OUTPUT_DIR_MAC
+CheckExitCode $?
+
+# Note: Android platform is used for both the robot and phone sound banks
+# Victor - Robot (Hardware)
+python $_BUNDLE_ASSETS_PYTHON_SCRIPT_PATH $_SOUNDS_DIR_ANDROID $_TMP_OUTPUT_DIR_ANDROID
+CheckExitCode $?
+
+# Organize sound bank assets
+# Victor - Robot (Webots)
+python $_ORGANIZE_ASSETS_PYTHON_SCRIPT_PATH $_TMP_OUTPUT_DIR_MAC $_VR_MAC $_VR_BANK_LIST_PATH
+CheckExitCode $?
+
+# Note: Android platfrom is used for both the robot and phone sound banks
+# Victor - Robot (Hardware)
+python $_ORGANIZE_ASSETS_PYTHON_SCRIPT_PATH $_TMP_OUTPUT_DIR_ANDROID $_VR_ROBOT $_VR_BANK_LIST_PATH
+CheckExitCode $?
+
+# Delete temp copy
+rm -rf $_TMP_OUTPUT_DIR_MAC
+rm -rf $_TMP_OUTPUT_DIR_ANDROID
+
+exit 0

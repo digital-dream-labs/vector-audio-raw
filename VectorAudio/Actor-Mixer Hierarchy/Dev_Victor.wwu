@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{354F46D6-62F4-4D4F-BF6F-3176FE6B4643}" SchemaVersion="85" RootDocumentID="{4B9049D7-A855-4C5A-A339-B0A20AA66017}">
+	<AudioObjects>
+		<WorkUnit Name="Dev_Victor" ID="{354F46D6-62F4-4D4F-BF6F-3176FE6B4643}" OwnerID="{4B9049D7-A855-4C5A-A339-B0A20AA66017}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Dev_Jason" ID="{D406B228-122E-4AAE-A11C-230171B768EB}" PersistMode="Reference"/>
+				<WorkUnit Name="Dev_Ben" ID="{378D6DDB-6FE9-4EB1-A26D-1E53FFB5CCA1}" PersistMode="Reference"/>
+				<WorkUnit Name="Actor_Mixer_Templates" ID="{E005FCD9-ECC1-4194-8809-30A4DC7F0F85}" PersistMode="Reference"/>
+				<WorkUnit Name="Dev_Jordan" ID="{EA293259-A19E-462F-A1F1-738C4ACCC041}" PersistMode="Reference"/>
+				<WorkUnit Name="Dev_Andy" ID="{13319D65-F647-4117-8CDF-69E30F80D3E4}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

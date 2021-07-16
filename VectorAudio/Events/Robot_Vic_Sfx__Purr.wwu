@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{82957BC4-5755-40A8-B913-B2D829F3F806}" SchemaVersion="85" RootDocumentID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}">
+	<Events>
+		<WorkUnit Name="Robot_Vic_Sfx__Purr" ID="{82957BC4-5755-40A8-B913-B2D829F3F806}" OwnerID="{2681AECF-C4FE-49C4-8BB1-7D67037AD367}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play__Robot_Vic_Sfx__Purr_Loop_Play" ID="{9999C345-3ED8-4573-84B7-706609645AF2}">
+					<ChildrenList>
+						<Action Name="" ID="{D4FB870B-BE28-4EAE-AACE-78FAD0E27D70}" ShortID="19051749">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Purr_Level" ID="{76509EEF-F12A-4AEF-91CB-0686E62B48E2}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7A379F6A-644B-43F6-9108-FCF12B734980}" ShortID="779295266">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Purr_Loop" ID="{7368DF49-CDD9-4AAC-BA67-E6AEAC3313BA}" WorkUnitID="{1585111B-A62C-45F3-8166-9B275E11A651}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop__Robot_Vic_Sfx__Purr_Loop_Stop" ID="{8107ADD6-DED1-48C0-9F07-870BD50A5468}">
+					<ChildrenList>
+						<Action Name="" ID="{F2220086-9089-410F-8750-1815E5F65FCB}" ShortID="327649312">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Purr_Loop" ID="{7368DF49-CDD9-4AAC-BA67-E6AEAC3313BA}" WorkUnitID="{1585111B-A62C-45F3-8166-9B275E11A651}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{56125C92-25E6-4A3E-A268-C9FDEB646DD9}" ShortID="695570164">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="39"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Purr_Level" ID="{76509EEF-F12A-4AEF-91CB-0686E62B48E2}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Purr_Increase_Level" ID="{92FB1C39-11EA-460D-B15C-2101780F6159}">
+					<ChildrenList>
+						<Action Name="" ID="{BEB93405-D3BA-4B24-9148-35D52CE21DC6}" ShortID="658632662">
+							<PropertyList>
+								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Purr_Level" ID="{76509EEF-F12A-4AEF-91CB-0686E62B48E2}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Sfx__Purr_Single" ID="{719231AA-E01C-4510-A1AB-EC6E79E12289}">
+					<ChildrenList>
+						<Action Name="" ID="{EC881DF3-741F-45A6-9F3F-FB0091C444D0}" ShortID="387547886">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Purr_01_WM" ID="{66C7C7A1-2C10-4023-AA16-08BFC2085FCE}" WorkUnitID="{1585111B-A62C-45F3-8166-9B275E11A651}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

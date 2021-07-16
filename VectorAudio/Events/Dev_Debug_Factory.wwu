@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{720CE710-36DF-4B15-80DA-03812FC546E1}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Dev_Debug_Factory" ID="{720CE710-36DF-4B15-80DA-03812FC546E1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play__Dev_Robot_Factory__Scan_Loop_Stop_Bell" ID="{19CDF2BE-DC31-44AA-8E24-69CD9B22DF8E}">
+					<ChildrenList>
+						<Action Name="" ID="{76CEB559-423B-4198-BBE0-B9A5E3791F81}" ShortID="633934419">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dev_Robot_Factory__Scan_Loop_Stop_Bell" ID="{762D1C4C-87E3-4A70-BE40-AD65E277B3FC}" WorkUnitID="{6205CF34-B0A7-431E-8FCA-5DE8DDA77ADF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Dev_Robot_Factory__Tone_1k_1sec" ID="{8B233AB7-FA33-4D11-BAEC-3ED8E794356E}">
+					<ChildrenList>
+						<Action Name="" ID="{AA5F720D-22A6-47C4-99D7-DF61788FFAC4}" ShortID="262871653">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dev_Robot_Factory__Tone_1k_1sec" ID="{B1150D25-814F-4B73-A4F3-2B97277AEDB7}" WorkUnitID="{6205CF34-B0A7-431E-8FCA-5DE8DDA77ADF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Dev_Robot_Factory__Tone_1k_5sec" ID="{BF0AF691-7F40-4280-A8C9-7C862D5F2A24}">
+					<ChildrenList>
+						<Action Name="" ID="{206DC3B4-CF1B-413B-A839-DB36A2F5246E}" ShortID="729988620">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dev_Robot_Factory__Tone_1k_5sec" ID="{E9736FB5-D257-44B0-9CEF-7997439B25A6}" WorkUnitID="{6205CF34-B0A7-431E-8FCA-5DE8DDA77ADF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

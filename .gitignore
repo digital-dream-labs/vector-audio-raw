@@ -1,0 +1,41 @@
+# Misc
+*~
+*.d
+*.cache
+*.swp
+
+# Mac OS
+*.DS_Store
+
+# Anki specific
+EXTERNALS
+TAGS
+.subtreeconfig
+
+# Misc
+*.bak
+# *.orig ## Going to try NOT ignoring these for awhile: if you don't need them, just delete them instead of hiding them
+*~
+*.d
+*.cache
+*.swp
+*.TMP
+.vagrant
+.idea
+*.swo
+binary_cache
+perf.data
+symbol_cache
+.projectile
+
+#VictorAudio
+VictorAudio/IncrementalSoundBankData.xml
+VictorAudio/*.prof
+VictorAudio/.cache/
+VictorAudio/GeneratedSoundBanks/
+VictorAudio/.backup
+VictorAudio/VictorAudio.wproj_migration.log
+VictorAudio/VictorAudio.*.validationcache
+VictorAudio/VictorAudio.*.wsettings
+*.akd
+*.wem

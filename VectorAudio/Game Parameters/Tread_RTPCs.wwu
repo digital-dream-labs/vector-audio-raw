@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C84762C6-EB94-4AD7-9CF4-EA9D69215888}" SchemaVersion="85" RootDocumentID="{D7D36728-07ED-45F4-872F-DF58B94CA436}">
+	<GameParameters>
+		<WorkUnit Name="Tread_RTPCs" ID="{C84762C6-EB94-4AD7-9CF4-EA9D69215888}" OwnerID="{988B18FE-E31F-45AF-9AE8-D053B9B55D97}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="Robot_Vic_Tread_Speed" ID="{98C33070-F370-4A68-8130-F686150B29D8}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Tread_Spin_Speed" ID="{FF1D8437-5CC2-4483-B2D7-FE1C19DD6E15}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Tread_Accelerate" ID="{AAB8A9E9-B447-4C22-8579-71160171DE48}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

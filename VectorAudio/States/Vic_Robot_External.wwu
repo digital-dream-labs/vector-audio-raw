@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{97DEF313-49D4-47CE-9369-81A99C72C482}" SchemaVersion="85" RootDocumentID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}">
+	<States>
+		<WorkUnit Name="Vic_Robot_External" ID="{97DEF313-49D4-47CE-9369-81A99C72C482}" OwnerID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="Robot_Vic_External_Language" ID="{8AEC4A05-AD35-4EC5-9C15-D14E0484D0A4}">
+					<ChildrenList>
+						<State Name="None" ID="{AD843026-C707-4DE5-AC21-CF487BAD6F54}"/>
+						<State Name="english" ID="{A23645FF-3563-46CA-9185-271D14E01D18}"/>
+						<State Name="german" ID="{FD07D3B8-6CA9-42D7-A095-57F71543F1E9}"/>
+						<State Name="japanese" ID="{988EF3DA-21CD-4AFB-9E8F-A538F3404C61}"/>
+						<State Name="french" ID="{B097F08B-D765-4FA9-A778-0C280AF890DB}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Robot_Vic_External_Processing" ID="{EC079BA9-B174-42E5-AA16-79CCA1941D9A}">
+					<ChildrenList>
+						<State Name="None" ID="{B41C1CEE-DABF-434D-8EAF-1D31F9413013}"/>
+						<State Name="Robot_Vic_External_Processed" ID="{B854B8FD-DABD-40C6-A06A-5794047D7C2C}"/>
+						<State Name="Robot_Vic_External_Unprocessed" ID="{02FCDF8A-C0C8-4C82-993C-7B1F82052C48}"/>
+						<State Name="Robot_Vic_External_Unit_Test_Mock" ID="{C2C7E948-22BB-4A15-86CC-B203544F66D6}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

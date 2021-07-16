@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CD8EA6CE-3376-474D-826A-20CA71A0820E}" SchemaVersion="85" RootDocumentID="{D7D36728-07ED-45F4-872F-DF58B94CA436}">
+	<GameParameters>
+		<WorkUnit Name="SDK_RTPCs" ID="{CD8EA6CE-3376-474D-826A-20CA71A0820E}" OwnerID="{988B18FE-E31F-45AF-9AE8-D053B9B55D97}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="Robot_Vic_SDK_Volume" ID="{8BAB499C-F93B-42F2-8CBF-8C6EB7BA1C61}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

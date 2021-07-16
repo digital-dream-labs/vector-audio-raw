@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D8080713-8F94-4FF4-A044-AFDDE30B7C16}" SchemaVersion="85" RootDocumentID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}">
+	<States>
+		<WorkUnit Name="Vic_Robot_Sfx_States" ID="{D8080713-8F94-4FF4-A044-AFDDE30B7C16}" OwnerID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="Robot_Vic_Vc" ID="{8EC0181B-7B84-4570-8DD7-3EEF035EA10B}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{A1E71AA8-23E1-443C-AB96-B3D6C63FA67B}"/>
+						<State Name="Robot_Vic_Vc_On" ID="{362A0186-CB62-4898-8CAB-61F270BE2103}"/>
+						<State Name="Robot_Vic_Vc_Off" ID="{D5F681D9-F68D-4324-A43C-D154F10C86FC}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Robot_Vic_Quiet" ID="{C05A5616-B4E5-431C-844A-5EB6D0593FDE}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{AE6D76B1-0159-42F4-A93D-BF042F6559D5}"/>
+						<State Name="Robot_Vic_Quiet_On" ID="{B1E9A966-50FC-4BC9-8350-FB3245FDD2A4}"/>
+						<State Name="Robot_Vic_Quiet_Off" ID="{50B488B9-FC4F-421A-8FC2-31C67A132064}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Robot_Vic_Petting_Level" ID="{EFC81A20-D029-40DE-9E55-5CFD7964C8A5}">
+					<ChildrenList>
+						<State Name="None" ID="{6D30DA2A-5FB8-4362-AF1C-F9B4C19DF5E9}"/>
+						<State Name="Robot_Vic_Petting_Level_01" ID="{B80B868A-3882-4307-82E1-8987608C0A95}"/>
+						<State Name="Robot_Vic_Petting_Level_02" ID="{89B4852A-2EBB-424F-960B-C44A167E6A01}"/>
+						<State Name="Robot_Vic_Petting_Level_03" ID="{95160F25-32A0-4B13-878A-31B6078464EF}"/>
+						<State Name="Robot_Vic_Petting_Level_04" ID="{471E849C-F0FD-4014-B47E-5CE1E0AEEE7D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="mood" ID="{E4F909E9-25A9-41D3-822F-E0C972D4E1C3}">
+					<ChildrenList>
+						<State Name="None" ID="{39A08386-9285-4054-B628-CD859F4B1878}"/>
+						<State Name="happy" ID="{83EEF47D-4EA7-4625-9E3D-3A6B6F709146}"/>
+						<State Name="sad" ID="{69926E47-286C-43B0-9D9A-19EFE9B5672D}"/>
+						<State Name="neutral" ID="{D8651138-1247-4875-8998-87F98A53B908}"/>
+						<State Name="angry" ID="{C2724313-E724-4A87-AA36-D36DFBE4CEAF}"/>
+						<State Name="curious" ID="{FFF25E96-F385-41D7-9BCE-F897A7B1CFFE}"/>
+						<State Name="surprised" ID="{FAEE0BDF-73C0-4763-80BB-768A9F3C1B78}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

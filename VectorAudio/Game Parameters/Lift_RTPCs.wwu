@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{22EC9E76-D456-468F-A312-6B7FA81A5657}" SchemaVersion="85" RootDocumentID="{D7D36728-07ED-45F4-872F-DF58B94CA436}">
+	<GameParameters>
+		<WorkUnit Name="Lift_RTPCs" ID="{22EC9E76-D456-468F-A312-6B7FA81A5657}" OwnerID="{988B18FE-E31F-45AF-9AE8-D053B9B55D97}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="Robot_Vic_Lift_Speed" ID="{ED97F06C-B50D-436B-BEE7-AC41AFBA8E6A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Lift_Position" ID="{8B7C765F-05B0-4E0D-B8F0-A980952727B6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Lift_Accelerate" ID="{41438A72-9CE8-43DD-8FEC-66C5E9E85794}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

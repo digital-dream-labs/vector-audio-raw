@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1585111B-A62C-45F3-8166-9B275E11A651}" SchemaVersion="85" RootDocumentID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}">
+	<AudioObjects>
+		<WorkUnit Name="Robot_Vic_Sfx__Purr" ID="{1585111B-A62C-45F3-8166-9B275E11A651}" OwnerID="{0FF2DC92-81AE-4C2E-82EC-4EC14ACDEF9A}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Robot_Vic_Sfx__Purr" ID="{9425853B-5492-4884-A615-6845D33FC3ED}" ShortID="297263298">
+					<PropertyList>
+						<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CAA6C8DA-F2D1-421E-BE8C-65A33BD135F0}"/>
+								</ModifierInfo>
+							</ModifierList>
+							<RTPCList>
+								<RTPC Name="" ID="{4B61A656-750A-4AF7-A091-74DA347778CD}" ShortID="106859397">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Robot_Vic_Purr_Level" ID="{76509EEF-F12A-4AEF-91CB-0686E62B48E2}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{B7D23E67-5EB0-4A31-983F-121CDEF6B7B3}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-5.88471</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.18647</XPos>
+												<YPos>-6.33162</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.45204</XPos>
+												<YPos>-6.26286</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.70148</XPos>
+												<YPos>-1.91872</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.81532</XPos>
+												<YPos>0.58534</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>1.67127</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Victor_Robot_SFX_High_Priority_Petting" ID="{DE9F4634-EB97-4058-97C1-7F9086A38A37}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Robot_Vic_Sfx__Purr_Loop" ID="{7368DF49-CDD9-4AAC-BA67-E6AEAC3313BA}" ShortID="968867158">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.6"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{698C1F58-023A-4AC2-A6D2-A83372E7A09C}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Robot_Vic_Sfx__Purr_01_WM" ID="{13E7670A-8603-40AC-96E2-8CEEC56641BA}" ShortID="258429666">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{11A17809-BEDF-4FCB-909A-32A63BED7F9D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="40"/>
+															<Property Name="Min" Type="Real64" Value="-60"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{353AE254-AFBC-4C5C-8EFD-190AFF0EB165}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Robot_Vic_Sfx__Purr_01_WM" ID="{2129134F-49DA-46A5-AA95-77C6349DD2DA}" ShortID="772164625">
+											<Language>SFX</Language>
+											<AudioFile>Robot_Vic_Sfx__Purr_01_WM.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Robot_Vic_Sfx__Purr_01_WM" ID="{2129134F-49DA-46A5-AA95-77C6349DD2DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Robot_Vic_Sfx__Purr_01_WM" ID="{13E7670A-8603-40AC-96E2-8CEEC56641BA}"/>
+								<ItemRef Name="Robot_Vic_Sfx__Purr_01_WM" ID="{13E7670A-8603-40AC-96E2-8CEEC56641BA}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<Sound Name="Robot_Vic_Sfx__Purr_01_WM" ID="{66C7C7A1-2C10-4023-AA16-08BFC2085FCE}" ShortID="394538615">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>150</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1EB43639-0ECD-4775-927E-B0B29420901F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="40"/>
+													<Property Name="Min" Type="Real64" Value="-60"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7F0897E9-E5F1-45AA-B346-D6CC05AC8A6F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Vic_Sfx__Purr_01_WM" ID="{F2EA51E2-47AF-4947-9083-9E12F6956765}" ShortID="501340437">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Vic_Sfx__Purr_01_WM.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="772164625"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Vic_Sfx__Purr_01_WM" ID="{F2EA51E2-47AF-4947-9083-9E12F6956765}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

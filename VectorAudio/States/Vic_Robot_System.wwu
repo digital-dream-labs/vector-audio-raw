@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CCDC75EF-60A9-44D8-8B09-4EE7F30D1AD3}" SchemaVersion="85" RootDocumentID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}">
+	<States>
+		<WorkUnit Name="Vic_Robot_System" ID="{CCDC75EF-60A9-44D8-8B09-4EE7F30D1AD3}" OwnerID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="Robot_Vic_System_Tests" ID="{BE710877-8399-4FCC-8FC5-9462BF953EDC}">
+					<ChildrenList>
+						<State Name="None" ID="{50729D90-67B6-4624-8303-4D1A43EA59BD}"/>
+						<State Name="App_Run" ID="{0962165A-F785-4249-B35F-ED6556063F71}">
+							<Comment>This is the default state for when the app is running under normal circumstances</Comment>
+						</State>
+						<State Name="Unit_Test" ID="{F44DC333-A486-4706-B515-366DD7D1CDA2}">
+							<Comment>Turn on while running unit test to void hitting run time errors. For example Text to Speech</Comment>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Robot_Vic_Low_Power_Mode" ID="{1C5CD85B-AD69-4349-B18B-388845FDA961}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{2336E67A-5198-4BE0-B3EB-EBBB750931F6}"/>
+						<State Name="Low_Power_Mode_On" ID="{6AC696AE-C4DE-40F8-BF6B-3D7CF4E0ED87}"/>
+						<State Name="Low_Power_Mode_Off" ID="{5CCC8628-8474-420A-8147-E61A0F1472F7}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

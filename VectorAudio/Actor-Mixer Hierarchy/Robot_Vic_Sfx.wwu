@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0141C1BB-4E6C-4B0E-AA2A-564AC5949FA0}" SchemaVersion="85" RootDocumentID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}">
+	<AudioObjects>
+		<WorkUnit Name="Robot_Vic_Sfx" ID="{0141C1BB-4E6C-4B0E-AA2A-564AC5949FA0}" OwnerID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Robot_Vic_Sfx" ID="{0FF2DC92-81AE-4C2E-82EC-4EC14ACDEF9A}" ShortID="682998830">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{01049145-60CC-4BA0-AA02-305A0E385EDA}" ShortID="520590716">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="event_volume" ID="{65AAA66C-C5DF-4E2E-867D-149CF9F4B463}" WorkUnitID="{D7D36728-07ED-45F4-872F-DF58B94CA436}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{22FC6812-A08D-4E23-B7D9-0357E0032ADD}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<WorkUnit Name="Robot_Vic_Sfx__Head_and_Lift" ID="{A9E5378C-8671-4B9A-A50E-ABC781A15C0E}" PersistMode="Reference"/>
+						<WorkUnit Name="Robot_Vic_Sfx__Tread" ID="{C7980AD0-B744-43BB-9614-6EFB0C614810}" PersistMode="Reference"/>
+						<WorkUnit Name="Robot_Vic_Sfx__Misc" ID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}" PersistMode="Reference"/>
+						<WorkUnit Name="Robot_Vic_Sfx__Purr" ID="{1585111B-A62C-45F3-8166-9B275E11A651}" PersistMode="Reference"/>
+						<WorkUnit Name="Robot_Vic_Sfx__Scrn" ID="{C7984EA1-422D-4C73-8B74-65583DF15AF8}" PersistMode="Reference"/>
+					</ChildrenList>
+				</ActorMixer>
+				<WorkUnit Name="Robot_Vic_Staging" ID="{25000BE6-FF4D-454F-8DA6-257837ECEB7B}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5EAC22F0-5938-4883-9941-A49181378B83}" SchemaVersion="85" RootDocumentID="{D7D36728-07ED-45F4-872F-DF58B94CA436}">
+	<GameParameters>
+		<WorkUnit Name="Head_RTPCs" ID="{5EAC22F0-5938-4883-9941-A49181378B83}" OwnerID="{988B18FE-E31F-45AF-9AE8-D053B9B55D97}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="Robot_Vic_Head_Position" ID="{148E1588-ECE6-43DA-A521-2931377F2FD6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Head_Speed" ID="{09BAC565-9262-4809-AD56-3E406E581A1F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Head_Accelerate" ID="{DB631702-1EE6-4798-9AB1-263BFD023F5B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

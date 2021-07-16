@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{50D88102-FC12-4627-A121-C60BBB3AA878}" SchemaVersion="85" RootDocumentID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}">
+	<AudioObjects>
+		<WorkUnit Name="Robot_Vic_SDK" ID="{50D88102-FC12-4627-A121-C60BBB3AA878}" OwnerID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Robot_Vic__External_SDK_Playback" ID="{3A78E67E-51AF-489D-BFB9-E17A6964DEE9}" ShortID="357182391">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Robot_Vic__External_SDK_Playback_01" ID="{99363092-D519-48F2-A471-3239C053BD61}" ShortID="353910630">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{9E62AD98-26ED-499F-9DFF-D8625EDC037F}" ShortID="82448838">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Robot_Vic_SDK_Volume" ID="{8BAB499C-F93B-42F2-8CBF-8C6EB7BA1C61}" WorkUnitID="{CD8EA6CE-3376-474D-826A-20CA71A0820E}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5EF108EF-49E5-4043-8B14-91820DCB0E09}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0.1</XPos>
+														<YPos>-20</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>6</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Anki Streaming Wave Portal" ID="{91742D26-B2CC-4A41-BC8E-265301806E36}" ShortID="503106308" PluginName="Anki Streaming Wave Portal" CompanyID="300" PluginID="110">
+									<PropertyList>
+										<Property Name="StreamingWavePortalPluginId" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Anki Streaming Wave Portal" ID="{91742D26-B2CC-4A41-BC8E-265301806E36}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Vic__External_SDK_Playback_02" ID="{E1E672DF-BE98-4945-9C7E-C50240F3CCC0}" ShortID="834731624">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{46943D88-203A-41F5-8AC4-46AE76EE3260}" ShortID="111151863">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Robot_Vic_SDK_Volume" ID="{8BAB499C-F93B-42F2-8CBF-8C6EB7BA1C61}" WorkUnitID="{CD8EA6CE-3376-474D-826A-20CA71A0820E}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{536DD917-0955-4C1E-A162-CDD56CD0BC0F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0.1</XPos>
+														<YPos>-20</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>6</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Anki Streaming Wave Portal" ID="{F1FB0EE1-4E79-416B-8681-718B96949976}" ShortID="713842505" PluginName="Anki Streaming Wave Portal" CompanyID="300" PluginID="110">
+									<PropertyList>
+										<Property Name="StreamingWavePortalPluginId" Type="int32">
+											<ValueList>
+												<Value>101</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Anki Streaming Wave Portal" ID="{F1FB0EE1-4E79-416B-8681-718B96949976}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D476FC69-C239-46D8-93D5-03353CF83D32}" SchemaVersion="85">
+	<AudioDevices>
+		<WorkUnit Name="Default Work Unit" ID="{D476FC69-C239-46D8-93D5-03353CF83D32}" PersistMode="Standalone">
+			<ChildrenList>
+				<AudioDevice Name="System" ID="{B73C3ACF-0CFC-43EF-90D5-27DA6648E67B}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7"/>
+				<AudioDevice Name="No_Output" ID="{5AC7F839-936A-4A2C-B7E1-D6E027236B11}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7"/>
+				<AudioDevice Name="AkAlsaSink" ID="{3FBD95CC-4C91-4F11-8E44-0E5232143534}" PluginName="Alsa" CompanyID="0" PluginID="169" PluginType="7">
+					<PropertyList>
+						<Property Name="ChannelConfig" Type="int32" Value="3"/>
+						<Property Name="ChannelInfo" Type="int32" Value="1"/>
+						<Property Name="NumBuffers" Type="int32" Value="4"/>
+					</PropertyList>
+				</AudioDevice>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioDevices>
+</WwiseDocument>

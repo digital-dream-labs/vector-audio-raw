@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F516B596-F96C-4CD5-B643-DE83DA6A1A99}" SchemaVersion="85">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{F516B596-F96C-4CD5-B643-DE83DA6A1A99}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Cube_Feeding_Test" ID="{7F4BC454-725A-4581-A0DF-6BA4A569C7E2}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="dev_tone_freq" ID="{40C28B65-9A62-43B6-B090-5201B27E1F8B}"/>
+							<Value>1000</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="event_volume" ID="{65AAA66C-C5DF-4E2E-867D-149CF9F4B463}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Music_UI_Mix" ID="{24850AEF-224D-4692-B8F0-8A15546D3BBD}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="dev_tone_freq" ID="{40C28B65-9A62-43B6-B090-5201B27E1F8B}"/>
+							<Value>1000</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="event_volume" ID="{65AAA66C-C5DF-4E2E-867D-149CF9F4B463}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="MIDI music" ID="{C427D2BF-56AC-43C1-A81E-34CA9526D737}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="dev_tone_freq" ID="{40C28B65-9A62-43B6-B090-5201B27E1F8B}"/>
+							<Value>1000</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="event_volume" ID="{65AAA66C-C5DF-4E2E-867D-149CF9F4B463}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{ADA26873-20B5-49B7-8A77-7CDBC65BC8E0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__Blackjack_Lose" ID="{C8920275-63C7-4BBE-9F99-0699E9828D86}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__Head_Short_Curious" ID="{591322A1-C414-46EF-B42A-AC7F385BA481}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__Camera_Flash" ID="{52711317-9883-444B-A0FD-1BAF2F4C5F0E}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__No_Wifi" ID="{46F8B93B-C266-4CF3-97B0-122BF3D76F57}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__Emote_Happy" ID="{11715ABF-88D5-421B-86E6-CB8389D914E5}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__Tread_Happy" ID="{E232DC0C-DE38-45A3-85E4-2BFD0531F2B3}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__Fist_Bump" ID="{4BA9F8DF-46AB-4536-8F59-5DCCAC24E092}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__Wake_Word_On" ID="{CD7536D1-9C08-495E-8569-48059492B881}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play__Dev_Squawk__Head_Long_Curious" ID="{6545F01B-6413-4285-A363-4697225BA5D0}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Screen_Shift_Interpolation_Time" ID="{8F8BF4BA-8450-4031-AA8A-48DBE6BDE3FF}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_How_Old_Speed" ID="{312ED4B9-87C7-4060-B0FB-1243AFF72EB2}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Social" ID="{149793D2-505B-415D-AC25-C27BE8E6F939}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_SDK_Volume" ID="{8BAB499C-F93B-42F2-8CBF-8C6EB7BA1C61}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Lift_Speed" ID="{ED97F06C-B50D-436B-BEE7-AC41AFBA8E6A}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="dev_tone_freq" ID="{40C28B65-9A62-43B6-B090-5201B27E1F8B}"/>
+							<Value>1000</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Head_Position" ID="{148E1588-ECE6-43DA-A521-2931377F2FD6}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Lift_Accelerate" ID="{41438A72-9CE8-43DD-8FEC-66C5E9E85794}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Planning" ID="{8626BF23-6CEA-441B-884F-20CE7F67B6A7}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Held_Trust" ID="{23A0C020-A119-4479-8D84-B4BBF996E05E}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Dev_Squawk_Volume" ID="{EDE1D113-6ABE-447C-94A1-6E8F3670A4FD}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Tread_Spin_Speed" ID="{FF1D8437-5CC2-4483-B2D7-FE1C19DD6E15}"/>
+							<Value>-1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Happy" ID="{665F3EFF-C050-449A-9E60-26EFDD912036}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Volume_Behavior" ID="{06A92BCD-10FC-4728-BF2A-360EDEF2B994}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Head_Accelerate" ID="{DB631702-1EE6-4798-9AB1-263BFD023F5B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Head_Speed" ID="{09BAC565-9262-4809-AD56-3E406E581A1F}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Volume_Procedural" ID="{66333733-5190-4996-825C-A3255E895506}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Timer_Countdown" ID="{01407953-D1C2-4A23-B0B9-A30E4230577E}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Tread_Speed" ID="{98C33070-F370-4A68-8130-F686150B29D8}"/>
+							<Value>-1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Meter_Bus_Sfx" ID="{011EA5FF-66A5-4A7C-A4CE-BCCFB0BA8938}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Purr_Level" ID="{76509EEF-F12A-4AEF-91CB-0686E62B48E2}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Shaking" ID="{36B8366A-8A29-4B08-A4CC-9DDEBBFE1CF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="External_Speed" ID="{A96BCBDC-D429-4BC1-B28A-948B4681B4F7}"/>
+							<Value>0.2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Tread_Accelerate" ID="{AAB8A9E9-B447-4C22-8579-71160171DE48}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Meter_Bus_Vo" ID="{28C3F723-2CEF-4C4B-ABF0-3DA910853B17}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}"/>
+							<Value>0.79</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Environment_Ambient_Volume" ID="{1654F10A-5ECF-4D37-B3F5-7F1F73AC9B45}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="External_Shape" ID="{8ED4C225-B54F-4DCE-A65D-F9A90188479F}"/>
+							<Value>0.5</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Lift_Position" ID="{8B7C765F-05B0-4E0D-B8F0-A980952727B6}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="event_volume" ID="{65AAA66C-C5DF-4E2E-867D-149CF9F4B463}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Volume_Animation" ID="{14BA5AB0-5DC2-4E37-8798-0A8EAA3357FC}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Confident" ID="{9C331B37-98A0-4E68-AC27-376666C83291}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Robot_Vic_Meter_Bus_Tts" ID="{B01DB034-43D5-4F05-97C7-C5C90DFFD2E7}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Stim_01" ID="{E25967EB-7E59-4C68-ACC8-2784D18795D5}"/>
+						<CurrentSwitchRef Name="Angry" ID="{C546E197-9488-48D0-8D71-BEA11F7D31E0}"/>
+						<CurrentSwitchRef Name="Stim_01" ID="{65A0A53B-9367-45AB-B8DA-17DD5A9D67DE}"/>
+						<CurrentSwitchRef Name="Robot_Vic_Tread_Backward" ID="{0019E587-0FCE-4A0F-93CF-C3F5BDD9CF03}"/>
+						<CurrentSwitchRef Name="Robot_Vic_Lift_Direction_Down" ID="{EE7C8C8F-037D-44A8-832F-208DC9DDB2E2}"/>
+						<CurrentSwitchRef Name="Robot_Vic_Tread_Drive" ID="{EC68DB57-1010-4088-A9A2-36ADDCD6859C}"/>
+						<CurrentSwitchRef Name="Robot_Vic_Head_Direction_Down" ID="{3D15611B-D3A3-4914-9691-82D4C80B899D}"/>
+						<CurrentSwitchRef Name="Shift_Long" ID="{5C017949-03D3-4EC7-9757-40367D5CB63A}"/>
+						<CurrentSwitchRef Name="Streaming_Wave_Portal" ID="{A1A7B585-5E71-4AE1-85CA-8C8A2473E282}"/>
+						<CurrentSwitchRef Name="Robot_Vic_Mvmt_Long" ID="{9261D65E-F2AF-4B8C-BCD5-F914BB371B0A}"/>
+						<CurrentSwitchRef Name="Default_Processed" ID="{C883CEC8-E31F-499E-84E6-24AE343056B2}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

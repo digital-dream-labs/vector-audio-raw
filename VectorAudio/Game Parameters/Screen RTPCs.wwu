@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9E13E6ED-C514-4BFE-9E0F-80B93C01455C}" SchemaVersion="85" RootDocumentID="{D7D36728-07ED-45F4-872F-DF58B94CA436}">
+	<GameParameters>
+		<WorkUnit Name="Screen RTPCs" ID="{9E13E6ED-C514-4BFE-9E0F-80B93C01455C}" OwnerID="{988B18FE-E31F-45AF-9AE8-D053B9B55D97}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="Robot_Vic_Screen_Shift_Interpolation_Time" ID="{8F8BF4BA-8450-4031-AA8A-48DBE6BDE3FF}">
+					<Comment>Time is in milliseconds.
+Note: The max value can be modified by game designers, currently 200 ms is max</Comment>
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="300"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

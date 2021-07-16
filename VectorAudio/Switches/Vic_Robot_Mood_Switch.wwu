@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{41E2F387-2E4D-43AF-AC25-F2E9D45322A8}" SchemaVersion="85" RootDocumentID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}">
+	<Switches>
+		<WorkUnit Name="Vic_Robot_Mood_Switch" ID="{41E2F387-2E4D-43AF-AC25-F2E9D45322A8}" OwnerID="{43BBE686-BB9A-458A-8342-2E52CA5713C4}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="Robot_Vic_Mood_Switch" ID="{E40F6105-FD0A-4124-8031-DEF4D8909B16}">
+					<ChildrenList>
+						<Switch Name="Happy" ID="{8E1DF538-F765-4FA4-B04C-1F39DC1D3040}"/>
+						<Switch Name="Sad" ID="{1CE9B6DD-706E-4D95-AB6C-6094D540E783}"/>
+						<Switch Name="Neutral" ID="{E13573EB-AABE-4367-8AC1-21881EE31B31}"/>
+						<Switch Name="Curious" ID="{E6D2AC63-51B1-4D48-A856-6CB2B306892A}"/>
+						<Switch Name="Excited" ID="{5B7FACB2-D591-4A8C-835D-DEBF488B980C}"/>
+						<Switch Name="Angry" ID="{C546E197-9488-48D0-8D71-BEA11F7D31E0}"/>
+						<Switch Name="Surprised" ID="{531AF442-F877-4E2C-A9B3-6563BECDBF7D}"/>
+						<Switch Name="Effort" ID="{2924B0D3-1C44-4CF5-8E82-7850BC8F5826}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

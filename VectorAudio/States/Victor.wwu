@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}" SchemaVersion="85">
+	<States>
+		<WorkUnit Name="Victor" ID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Vic_Robot_Sfx_States" ID="{D8080713-8F94-4FF4-A044-AFDDE30B7C16}" PersistMode="Reference"/>
+				<WorkUnit Name="Vic_Robot_External" ID="{97DEF313-49D4-47CE-9369-81A99C72C482}" PersistMode="Reference"/>
+				<WorkUnit Name="Vic_Robot_System" ID="{CCDC75EF-60A9-44D8-8B09-4EE7F30D1AD3}" PersistMode="Reference"/>
+				<WorkUnit Name="Vic_Robot_Volume" ID="{A142DB9E-924F-4638-9881-20A6D5A940BA}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

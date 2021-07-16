@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EA293259-A19E-462F-A1F1-738C4ACCC041}" SchemaVersion="85" RootDocumentID="{4B9049D7-A855-4C5A-A339-B0A20AA66017}">
+	<AudioObjects>
+		<WorkUnit Name="Dev_Jordan" ID="{EA293259-A19E-462F-A1F1-738C4ACCC041}" OwnerID="{354F46D6-62F4-4D4F-BF6F-3176FE6B4643}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Robot_Vic_Sfx__Behavior_Playback_Audio" ID="{16696C6D-C319-4026-984F-B1BD97B818FC}" ShortID="1016879738">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Compressor (Custom)" ID="{2780D529-330F-4ACB-BE13-39FF1AA107E6}" ShortID="142884619" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<PropertyList>
+										<Property Name="AttackTime" Type="Real32" Value="0.05"/>
+										<Property Name="OutputGain" Type="Real32" Value="4"/>
+										<Property Name="ProcessLFE" Type="bool" Value="False"/>
+										<Property Name="Ratio" Type="Real32" Value="4"/>
+										<Property Name="Threshold" Type="Real32" Value="-10"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Anki Streaming Wave Portal" ID="{DBBDE2D4-AE9D-4F43-A1CF-EE79CAFAA122}" ShortID="636979160" PluginName="Anki Streaming Wave Portal" CompanyID="300" PluginID="110">
+							<PropertyList>
+								<Property Name="StreamingWavePortalPluginId" Type="int32" Value="10"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Anki Streaming Wave Portal" ID="{DBBDE2D4-AE9D-4F43-A1CF-EE79CAFAA122}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

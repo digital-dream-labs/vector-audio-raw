@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{378D6DDB-6FE9-4EB1-A26D-1E53FFB5CCA1}" SchemaVersion="85" RootDocumentID="{4B9049D7-A855-4C5A-A339-B0A20AA66017}">
+	<AudioObjects>
+		<WorkUnit Name="Dev_Ben" ID="{378D6DDB-6FE9-4EB1-A26D-1E53FFB5CCA1}" OwnerID="{354F46D6-62F4-4D4F-BF6F-3176FE6B4643}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Template Stim Containers" ID="{75B78AB9-B696-46DC-8D9B-2657DBD75AE8}" ShortID="1036619347">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Robot_Vic_SFX_Head_Down_Long_MOOD_Stim_02" ID="{736052FE-7115-40BC-BD88-714544428EFB}" ShortID="691211852">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Silence!" ID="{F72A7368-6729-451D-B194-BDDF6CE5B4D9}" ShortID="973653608">
+									<PropertyList>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Victor_Robot_SFX_Head_Lift" ID="{97344B79-D08A-4870-A4AA-3D816ED19544}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{8143D86E-9E1B-4065-8CE4-59B8DB140350}" ShortID="514110589" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{8143D86E-9E1B-4065-8CE4-59B8DB140350}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Robot_Vic_SFX_Head_Down_Long_Angry" ID="{468F4A07-E402-4266-9CE4-0188489B9CE4}" ShortID="130376599">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-300</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Victor_Robot_SFX_Head_Lift" ID="{97344B79-D08A-4870-A4AA-3D816ED19544}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Long_Angry_03_WM" ID="{60158BAD-7314-4D1F-B99D-2C35DDBF11E8}" ShortID="783562171">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_03_WM" ID="{29B58755-7CF9-4FB8-AF1E-B7D94D03EA07}" ShortID="652638207">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Long_Angry_03_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="231982259"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_03_WM" ID="{29B58755-7CF9-4FB8-AF1E-B7D94D03EA07}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Long_Angry_04_WM" ID="{1DD19E10-4F06-4CA1-A7A1-BC16D2CFD18B}" ShortID="99676060">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_04_WM" ID="{3250F8CC-F921-4C69-A8A9-DB6F7E956799}" ShortID="172388651">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Long_Angry_04_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Dev_Mac" ID="1021869465"/>
+														<File Platform="Victor_Linux" ID="68888692"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_04_WM" ID="{3250F8CC-F921-4C69-A8A9-DB6F7E956799}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Long_Angry_02_WM" ID="{D2B5F08B-B96E-470D-96D8-E8803BB1DCE6}" ShortID="1025466802">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_02_WM" ID="{87A489F2-AC91-462E-9277-0426101F8620}" ShortID="461389837">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Long_Angry_02_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Dev_Mac" ID="474686374"/>
+														<File Platform="Victor_Linux" ID="180057811"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_02_WM" ID="{87A489F2-AC91-462E-9277-0426101F8620}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Long_Angry_01_WM" ID="{DDE076C0-D11C-4FAC-A7B0-F4FCAB550969}" ShortID="662159396">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_01_WM" ID="{985BBD85-97D6-47D2-AF7F-290A56A5CFA6}" ShortID="536647277">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Long_Angry_01_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Dev_Mac" ID="62018716"/>
+														<File Platform="Victor_Linux" ID="28637198"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_01_WM" ID="{985BBD85-97D6-47D2-AF7F-290A56A5CFA6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Robot_Vic_Sfx__Head_Down_Long_Angry_05_WM" ID="{65B1FF9C-AAD9-4373-80F8-067D336E30CA}" ShortID="16850489">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_05_WM" ID="{9103C7D6-054A-4CB1-8998-DC410672916C}" ShortID="215508917">
+													<Language>SFX</Language>
+													<AudioFile>Robot_Vic_Sfx__Head_Down_Long_Angry_05_WM.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Dev_Mac" ID="969760274"/>
+														<File Platform="Victor_Linux" ID="447175508"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Robot_Vic_Sfx__Head_Down_Long_Angry_05_WM" ID="{9103C7D6-054A-4CB1-8998-DC410672916C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E18B0EF7-0281-41E8-B530-925609878965}" SchemaVersion="85">
+	<Presets>
+		<WorkUnit Name="Default Work Unit" ID="{E18B0EF7-0281-41E8-B530-925609878965}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Robot Bus Limiter" ID="{54DDC682-DAD2-4D49-8DC2-0CDA34AC0521}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+					<PropertyList>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="Ratio" Type="Real32" Value="13.9"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.061"/>
+						<Property Name="Threshold" Type="Real32" Value="-1"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Coz_External_Source" ID="{77218FF1-29DF-4E21-8613-C75B93BB74A1}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-96"/>
+						<Property Name="Voice1FilterFrequency" Type="Real32" Value="6526"/>
+						<Property Name="Voice1FilterType" Type="int32" Value="4"/>
+						<Property Name="Voice1Pitch" Type="Real32" Value="1000"/>
+						<Property Name="Voice2Enable" Type="bool" Value="True"/>
+						<Property Name="Voice2FilterFrequency" Type="Real32" Value="821"/>
+						<Property Name="Voice2FilterType" Type="int32" Value="5"/>
+						<Property Name="Voice2Gain" Type="Real32" Value="-5"/>
+						<Property Name="Voice2Pitch" Type="Real32" Value="1000"/>
+						<Property Name="WetLevel" Type="Real32" Value="-3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Coz_External_Source_03" ID="{0216B9D7-4D29-4236-A133-CFCA1B9EF195}" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="0.001"/>
+						<Property Name="Ratio" Type="Real32" Value="6.7"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.29"/>
+						<Property Name="Threshold" Type="Real32" Value="-47.1"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Coz_External_Source_01" ID="{BF0FD6D9-ABE9-4303-BD63-6E77E6BA6F95}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="0.4"/>
+						<Property Name="OutputGain" Type="Real32" Value="3.4"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="Ratio" Type="Real32" Value="2.3"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.19"/>
+						<Property Name="Threshold" Type="Real32" Value="-38.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Coz_External_Source_02" ID="{92027B53-DA6B-46A9-8059-B5DAE0E106BB}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="318"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="806"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="6670"/>
+						<Property Name="GainBand1" Type="Real32" Value="5"/>
+						<Property Name="GainBand2" Type="Real32" Value="5"/>
+						<Property Name="GainBand3" Type="Real32" Value="2"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="26.2"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="13.6"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot Bus Speaker Freq Dips" ID="{AB12BD14-3815-40A4-A2C5-9CB2C5EB87E1}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<Comment>Eq robot speaker</Comment>
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="835"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="1540"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4947"/>
+						<Property Name="GainBand1" Type="Real32" Value="4.5"/>
+						<Property Name="GainBand2" Type="Real32" Value="-2"/>
+						<Property Name="GainBand3" Type="Real32" Value="-2.5"/>
+						<Property Name="OutputLevel" Type="Real32" Value="1.5"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="2.1"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="4.2"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot Bus Speaker High &amp; Low Pass" ID="{D3587EB9-66C4-41F6-9515-FF105EDAB2A4}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<Comment>Eq Robot Speaker</Comment>
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="548"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="11228"/>
+						<Property Name="GainBand2" Type="Real32" Value="-4.5"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo Voice Processing EQ - 4" ID="{DEB1E820-F920-431C-8DEE-1F98DDC685CB}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="706"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="907"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4086"/>
+						<Property Name="GainBand1" Type="Real32" Value="4.5"/>
+						<Property Name="GainBand2" Type="Real32" Value="6.5"/>
+						<Property Name="GainBand3" Type="Real32" Value="-4"/>
+						<Property Name="OutputLevel" Type="Real32" Value="7.5"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.5"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="2.1"/>
+						<Property Name="QFactorBand3" Type="Real32" Value="1.8"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_German_Processing_01_Harmonizer" ID="{83A7EAF5-C799-4824-8FA4-C86E2A885C72}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+					<Comment>Default Harmonizer for German</Comment>
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-96"/>
+						<Property Name="SyncDry" Type="bool" Value="False"/>
+						<Property Name="Voice1FilterFrequency" Type="Real32" Value="11500"/>
+						<Property Name="Voice1FilterType" Type="int32" Value="4"/>
+						<Property Name="Voice1Gain" Type="Real32" Value="3"/>
+						<Property Name="Voice1Pitch" Type="Real32" Value="1150"/>
+						<Property Name="Voice2Enable" Type="bool" Value="True"/>
+						<Property Name="Voice2FilterFrequency" Type="Real32" Value="835"/>
+						<Property Name="Voice2FilterType" Type="int32" Value="5"/>
+						<Property Name="Voice2Gain" Type="Real32" Value="-1"/>
+						<Property Name="Voice2Pitch" Type="Real32" Value="1150"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_German_Processing_03_Compressor" ID="{05A417B3-E805-4303-BA0E-B3024AA59C18}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<Comment>Default Compressor for German.</Comment>
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="0.02"/>
+						<Property Name="ChannelLink" Type="bool" Value="False"/>
+						<Property Name="OutputGain" Type="Real32" Value="5"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="Ratio" Type="Real32" Value="4.5"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.15"/>
+						<Property Name="Threshold" Type="Real32" Value="-40.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_German_Processed_04_Parametric_EQ" ID="{8D76AA19-9253-4434-9DAC-FDE47D5251B6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<Comment>Default EQ for German.</Comment>
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="125"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="725"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4915"/>
+						<Property Name="GainBand1" Type="Real32" Value="-2.5"/>
+						<Property Name="GainBand2" Type="Real32" Value="4"/>
+						<Property Name="GainBand3" Type="Real32" Value="-2"/>
+						<Property Name="OutputLevel" Type="Real32" Value="5.5"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.7"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.7"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_Japanese_Processing_01_Harmonizer" ID="{0B9CDC64-DD5F-4959-BE83-ECAFAD80459E}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+					<Comment>Default Harmonizer for Japanese</Comment>
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-96"/>
+						<Property Name="SyncDry" Type="bool" Value="False"/>
+						<Property Name="Voice1FilterFrequency" Type="Real32" Value="11500"/>
+						<Property Name="Voice1Pitch" Type="Real32" Value="1300"/>
+						<Property Name="Voice2Enable" Type="bool" Value="True"/>
+						<Property Name="Voice2FilterFrequency" Type="Real32" Value="835"/>
+						<Property Name="Voice2Gain" Type="Real32" Value="-4"/>
+						<Property Name="Voice2Pitch" Type="Real32" Value="1300"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_Japanese_Processing_03_Compressor" ID="{89526D85-F86A-4932-BFD1-501D80B88550}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<Comment>Default Compressor for Japanese.</Comment>
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="0.02"/>
+						<Property Name="ChannelLink" Type="bool" Value="False"/>
+						<Property Name="OutputGain" Type="Real32" Value="3.4"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="Ratio" Type="Real32" Value="2.3"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.19"/>
+						<Property Name="Threshold" Type="Real32" Value="-38.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_Japanese_Processed_04_Parametric_EQ" ID="{28E9E88E-53FB-4537-B610-B162AEE5B417}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<Comment>Default EQ for Japanese.</Comment>
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="250"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="800"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4830"/>
+						<Property Name="GainBand1" Type="Real32" Value="-1.9"/>
+						<Property Name="GainBand2" Type="Real32" Value="4.2"/>
+						<Property Name="GainBand3" Type="Real32" Value="2.5"/>
+						<Property Name="OutputLevel" Type="Real32" Value="9"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.7"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_French_Processing_01_Harmonizer" ID="{FA2B1E7F-AA0E-4755-A8C5-888BB890461A}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+					<Comment>Default Harmonizer for French</Comment>
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-96"/>
+						<Property Name="SyncDry" Type="bool" Value="False"/>
+						<Property Name="Voice1FilterFrequency" Type="Real32" Value="11500"/>
+						<Property Name="Voice1FilterType" Type="int32" Value="4"/>
+						<Property Name="Voice1Pitch" Type="Real32" Value="1200"/>
+						<Property Name="Voice2Enable" Type="bool" Value="True"/>
+						<Property Name="Voice2FilterFrequency" Type="Real32" Value="400"/>
+						<Property Name="Voice2FilterType" Type="int32" Value="5"/>
+						<Property Name="Voice2Gain" Type="Real32" Value="-4"/>
+						<Property Name="Voice2Pitch" Type="Real32" Value="1200"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_French_Processing_03_Compressor" ID="{934B127E-B268-4917-A488-A403301C90D7}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<Comment>Default Compressor for French.</Comment>
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="0.04"/>
+						<Property Name="ChannelLink" Type="bool" Value="False"/>
+						<Property Name="OutputGain" Type="Real32" Value="13"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="Ratio" Type="Real32" Value="4.5"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.4"/>
+						<Property Name="Threshold" Type="Real32" Value="-44"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_French_Processed_04_Parametric_EQ" ID="{282D4596-8911-4C9D-9E92-6DDB3897053C}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<Comment>Default EQ for French.</Comment>
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="250"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4373"/>
+						<Property Name="GainBand1" Type="Real32" Value="-2.7"/>
+						<Property Name="GainBand2" Type="Real32" Value="3.5"/>
+						<Property Name="GainBand3" Type="Real32" Value="3.5"/>
+						<Property Name="OutputLevel" Type="Real32" Value="8.5"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+						<Property Name="QFactorBand3" Type="Real32" Value="1.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Cozmo_Voice_French_Processed_04_Parametric_EQ_V2" ID="{4AE034C5-99A6-47A7-959F-B54FE9E90AD6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<Comment>EQ for French: -3 @ 700, -6 @ 4.2k</Comment>
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="345"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="706"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4230"/>
+						<Property Name="GainBand1" Type="Real32" Value="-2"/>
+						<Property Name="GainBand2" Type="Real32" Value="-3"/>
+						<Property Name="GainBand3" Type="Real32" Value="-6"/>
+						<Property Name="OutputLevel" Type="Real32" Value="8.5"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand3" Type="Real32" Value="1.5"/>
+					</PropertyList>
+				</Effect>
+				<RandomSequenceContainer Name="Play_3_In_Random_Sequence" ID="{AC7D6CC1-7F32-4BA2-B185-83CA1CEDE831}">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0B604A83-E20A-4A78-93D8-A611B6A574C2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Victor_Robot_SFX_Head_Lift" ID="{97344B79-D08A-4870-A4AA-3D816ED19544}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+				</RandomSequenceContainer>
+				<ActorMixer Name="Robot_Vic_Sfx__Purr_Old_Cozmo_ver" ID="{A73CE04A-22A7-41D1-B1A4-79D15E6DC329}">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{0F72B533-9165-4DFC-8F93-DEE922245FC1}">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Robot_Vic_Purr_Level" ID="{76509EEF-F12A-4AEF-91CB-0686E62B48E2}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F2A4A6D7-3033-4482-BBB7-75FCBA57619F}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-8.86952</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.20505</XPos>
+												<YPos>-6</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.40267</XPos>
+												<YPos>-2</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.60178</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.80238</XPos>
+												<YPos>1</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>3</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect Medium" ID="{C2242190-EA66-4EC8-A876-8713CEEBAAC8}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="Robot_Vic_Sfx__Purr_New" ID="{4C070518-18D4-49B7-B81F-EEA7D04A4B27}">
+					<PropertyList>
+						<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{250F5173-609B-432E-A857-1CF5F9EF73D0}">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Robot_Vic_Purr_Level" ID="{76509EEF-F12A-4AEF-91CB-0686E62B48E2}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{378F736E-E9E8-4890-99C1-3BCEB56608E3}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-4.88841</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.20114</XPos>
+												<YPos>-3.19424</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.40072</XPos>
+												<YPos>-0.62388</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.60178</XPos>
+												<YPos>0.32174</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.80212</XPos>
+												<YPos>1.05673</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>1.67127</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_Sfx" ID="{5A680E71-0790-4B7D-9699-61D6D5883AA2}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="Robot_Vic_Sfx__Scrn_Actor_Mixer_Parent" ID="{679BDDB8-B8AF-41D3-B38F-B9C27C5101E5}">
+					<PropertyList>
+						<Property Name="BypassEffect0" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>80</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-16</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{F97A41D0-21ED-4403-BBB1-C406E81647E9}">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}" WorkUnitID="{3565DBC8-DADB-4BC8-86A3-3CA9DD2175D6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{47F89979-C296-4AB2-85F8-90F5EEB15FEC}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-5</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.333333333333333</XPos>
+												<YPos>-5</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Victor_Robot_SFX_Screen" ID="{9436E7F2-A265-4541-82C8-03E63EF2D53C}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</Presets>
+</WwiseDocument>

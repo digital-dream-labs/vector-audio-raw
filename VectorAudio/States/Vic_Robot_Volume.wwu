@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A142DB9E-924F-4638-9881-20A6D5A940BA}" SchemaVersion="85" RootDocumentID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}">
+	<States>
+		<WorkUnit Name="Vic_Robot_Volume" ID="{A142DB9E-924F-4638-9881-20A6D5A940BA}" OwnerID="{A38B6E8E-7DC1-481A-B24A-4EADD75F76E4}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="Robot_Vic_Volume" ID="{FDA717EE-DA35-4586-830E-DB39C155DFE8}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.01"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{BA7EEFCB-6D00-48EF-ADA9-24792DF32F20}"/>
+						<State Name="Low" ID="{A833F4DD-D1A4-413F-9FD5-EEC0FCBE6029}"/>
+						<State Name="MediumLow" ID="{6BA29384-FAB8-472F-90AF-DD0B6992F3FE}"/>
+						<State Name="Medium" ID="{FBAEDE0F-9A3A-4F81-8057-070ABA7BFD7D}"/>
+						<State Name="MediumHigh" ID="{781AA9BA-6F50-4FAE-ACF6-99B8B0B54847}"/>
+						<State Name="High" ID="{2FE31C6B-72DE-4F30-81B0-F6D0B6B24F1A}"/>
+						<State Name="Mute" ID="{748C1760-7479-48DF-BFF7-B6D90BFC3AA9}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

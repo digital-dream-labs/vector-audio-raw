@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CA27D626-FD35-45A3-A3C8-BFB3E9E1C367}" SchemaVersion="85">
+	<Effects>
+		<WorkUnit Name="Victor" ID="{CA27D626-FD35-45A3-A3C8-BFB3E9E1C367}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Victor_Meter_Bus_Vo" ID="{AE0B944E-3ADF-4EFC-9F13-DA3DEFB552B3}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="Robot_Vic_Meter_Bus_Vo" ID="{28C3F723-2CEF-4C4B-ABF0-3DA910853B17}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="Victor_Meter_Bus_Sfx" ID="{52098365-8DB2-489C-9F7A-0B1A5C5514CB}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="Robot_Vic_Meter_Bus_Sfx" ID="{011EA5FF-66A5-4A7C-A4CE-BCCFB0BA8938}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="Victor_Meter_Bus_External" ID="{874507B0-CD0D-4A80-815C-15E52AE5F3AB}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="Robot_Vic_Meter_Bus_Tts" ID="{B01DB034-43D5-4F05-97C7-C5C90DFFD2E7}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="Robot_Vic_Master_EQ" ID="{D4C901B4-7AE6-4F97-BC78-B0C33FC2B78B}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot_Vic_Master_Limiter" ID="{F4C12DED-1460-4C44-9D86-DB7B37E48DAB}" PluginName="McDSP ML1" CompanyID="256" PluginID="103" PluginType="3">
+					<PropertyList>
+						<Property Name="Ceiling" Type="Real32" Value="-0.2446718"/>
+						<Property Name="Mode" Type="int32" Value="4"/>
+						<Property Name="Release" Type="Real32" Value="1"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot_Vic_TTS_Pre_Vocoder_EQ_01" ID="{49BDB15F-8895-4251-B4EE-AF29E8B22B4C}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="300"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="3100"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="8000"/>
+						<Property Name="GainBand2" Type="Real32" Value="3"/>
+						<Property Name="GainBand3" Type="Real32" Value="-3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot_Vic_TTS_Pre_Vocoder_Compressor_01" ID="{43A23FF7-A2E8-4647-ACE4-221472EB7DE7}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="Ratio" Type="Real32" Value="10"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.2"/>
+						<Property Name="Threshold" Type="Real32" Value="-6"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_1" ID="{48EA68FC-FB3A-4DE6-A9AE-3D613475BCF4}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="260"/>
+						<Property Name="CarrierWaveform" Type="int32" Value="14"/>
+						<Property Name="DryLevel" Type="Real32" Value="-5"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1"/>
+						<Property Name="EQSlider5" Type="Real32" Value="1.3"/>
+						<Property Name="EQSlider6" Type="Real32" Value="0"/>
+						<Property Name="EQSlider7" Type="Real32" Value="1"/>
+						<Property Name="EQSlider8" Type="Real32" Value="0"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="20"/>
+						<Property Name="MasterLevel" Type="Real32" Value="-8"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_2" ID="{BC89D4C3-B64B-420E-A79A-77E04AAECD52}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="135"/>
+						<Property Name="CarrierFrequencyMax" Type="Real32" Value="200"/>
+						<Property Name="CarrierFrequencyMin" Type="Real32" Value="100"/>
+						<Property Name="DryLevel" Type="Real32" Value="-12"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1"/>
+						<Property Name="EQSlider5" Type="Real32" Value="1"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1"/>
+						<Property Name="EQSlider8" Type="Real32" Value="1"/>
+						<Property Name="EnvelopeAttackTime" Type="Real32" Value="2"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="20"/>
+						<Property Name="MasterLevel" Type="Real32" Value="10"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_3" ID="{BEB8A90A-8F4C-4C7A-8CAF-69498FE9A7BC}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="180"/>
+						<Property Name="DryLevel" Type="Real32" Value="-3"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1.4"/>
+						<Property Name="EQSlider5" Type="Real32" Value="1"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1"/>
+						<Property Name="EQSlider7" Type="Real32" Value="1.2"/>
+						<Property Name="EQSlider8" Type="Real32" Value="0"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="5"/>
+						<Property Name="MasterLevel" Type="Real32" Value="8"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_4" ID="{B8973B64-CC19-4FE1-810E-5CE108C31415}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="185"/>
+						<Property Name="CarrierFrequencyMax" Type="Real32" Value="200"/>
+						<Property Name="CarrierFrequencyMin" Type="Real32" Value="100"/>
+						<Property Name="DryLevel" Type="Real32" Value="-8"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1.5"/>
+						<Property Name="EQSlider5" Type="Real32" Value="1"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1.4"/>
+						<Property Name="EQSlider7" Type="Real32" Value="1"/>
+						<Property Name="EQSlider8" Type="Real32" Value="1"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="5"/>
+						<Property Name="MasterLevel" Type="Real32" Value="6"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Robot_Vic_Master_Limiter_Wwise" ID="{180493C1-9AFF-4F85-8C6F-449EBF1D1FC8}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+					<PropertyList>
+						<Property Name="Ratio" Type="Real32" Value="50"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
+						<Property Name="Threshold" Type="Real32" Value="-0.3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_5" ID="{EBBE89F0-8FA2-41DB-AE96-30788A67D348}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="150"/>
+						<Property Name="CarrierFrequencyMax" Type="Real32" Value="200"/>
+						<Property Name="CarrierFrequencyMin" Type="Real32" Value="100"/>
+						<Property Name="CarrierWaveform" Type="int32" Value="4"/>
+						<Property Name="DryLevel" Type="Real32" Value="-5"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1.5"/>
+						<Property Name="EQSlider5" Type="Real32" Value="0.5"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1.2"/>
+						<Property Name="EQSlider7" Type="Real32" Value="1"/>
+						<Property Name="EQSlider8" Type="Real32" Value="0"/>
+						<Property Name="EnvelopeAttackTime" Type="Real32" Value="5"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="1"/>
+						<Property Name="MasterLevel" Type="Real32" Value="5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_6" ID="{2902BB21-EA01-4D6B-8179-820B16FD1ECA}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="120"/>
+						<Property Name="CarrierFrequencyMax" Type="Real32" Value="200"/>
+						<Property Name="CarrierFrequencyMin" Type="Real32" Value="100"/>
+						<Property Name="DryLevel" Type="Real32" Value="-7"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1.3"/>
+						<Property Name="EQSlider5" Type="Real32" Value="0.7"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1"/>
+						<Property Name="EQSlider7" Type="Real32" Value="1"/>
+						<Property Name="EQSlider8" Type="Real32" Value="0"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="30"/>
+						<Property Name="MasterLevel" Type="Real32" Value="7"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_7" ID="{7506972A-8442-4014-AD77-F4D395790D15}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="220"/>
+						<Property Name="CarrierWaveform" Type="int32" Value="14"/>
+						<Property Name="DryLevel" Type="Real32" Value="-5"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1.5"/>
+						<Property Name="EQSlider5" Type="Real32" Value="0.8"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1"/>
+						<Property Name="EQSlider7" Type="Real32" Value="1"/>
+						<Property Name="EQSlider8" Type="Real32" Value="0"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="1"/>
+						<Property Name="MasterLevel" Type="Real32" Value="2"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_8" ID="{08D48D2B-C438-415F-8189-7AE4F6DDD72D}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="190"/>
+						<Property Name="CarrierWaveform" Type="int32" Value="14"/>
+						<Property Name="DryLevel" Type="Real32" Value="-7"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1.5"/>
+						<Property Name="EQSlider5" Type="Real32" Value="0.5"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1"/>
+						<Property Name="EQSlider7" Type="Real32" Value="1"/>
+						<Property Name="EQSlider8" Type="Real32" Value="0.51"/>
+						<Property Name="EnvelopeAttackTime" Type="Real32" Value="15"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="5"/>
+						<Property Name="MasterLevel" Type="Real32" Value="-1"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_11" ID="{1B658445-DE29-45F5-BCAC-7B56C35921AF}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="130"/>
+						<Property Name="CarrierFrequencyMax" Type="Real32" Value="200"/>
+						<Property Name="CarrierFrequencyMin" Type="Real32" Value="100"/>
+						<Property Name="CarrierWaveform" Type="int32" Value="14"/>
+						<Property Name="DryLevel" Type="Real32" Value="0"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="2"/>
+						<Property Name="EQSlider5" Type="Real32" Value="1.5"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1.2"/>
+						<Property Name="EQSlider7" Type="Real32" Value="0"/>
+						<Property Name="EQSlider8" Type="Real32" Value="1"/>
+						<Property Name="EnvelopeAttackTime" Type="Real32" Value="5"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="40"/>
+						<Property Name="MasterLevel" Type="Real32" Value="2"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_12" ID="{1A9F05B5-F158-48DB-9AA0-A9BA10138088}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="180"/>
+						<Property Name="CarrierFrequencyMax" Type="Real32" Value="200"/>
+						<Property Name="CarrierFrequencyMin" Type="Real32" Value="100"/>
+						<Property Name="CarrierWaveform" Type="int32" Value="14"/>
+						<Property Name="DryLevel" Type="Real32" Value="-1"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="0"/>
+						<Property Name="EQSlider5" Type="Real32" Value="0.5"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1"/>
+						<Property Name="EQSlider7" Type="Real32" Value="0.5"/>
+						<Property Name="EQSlider8" Type="Real32" Value="1"/>
+						<Property Name="EnvelopeAttackTime" Type="Real32" Value="5"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="5"/>
+						<Property Name="MasterLevel" Type="Real32" Value="12"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_10" ID="{18C5644F-CE7C-46C9-974F-F9F7F6167EE1}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="170"/>
+						<Property Name="DryLevel" Type="Real32" Value="0"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="2"/>
+						<Property Name="EQSlider5" Type="Real32" Value="0.8"/>
+						<Property Name="EQSlider6" Type="Real32" Value="1"/>
+						<Property Name="EQSlider7" Type="Real32" Value="0"/>
+						<Property Name="EQSlider8" Type="Real32" Value="0"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="5"/>
+						<Property Name="MasterLevel" Type="Real32" Value="5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Krotos_Vocoder_9" ID="{71BFE2FD-D9E5-4502-A50B-4B13E9BFC861}" PluginName="Krotos Vocoder" CompanyID="269" PluginID="42" PluginType="3">
+					<PropertyList>
+						<Property Name="CarrierFrequency" Type="Real32" Value="135"/>
+						<Property Name="CarrierWaveform" Type="int32" Value="14"/>
+						<Property Name="DryLevel" Type="Real32" Value="-3"/>
+						<Property Name="EQSlider1" Type="Real32" Value="0"/>
+						<Property Name="EQSlider2" Type="Real32" Value="0"/>
+						<Property Name="EQSlider3" Type="Real32" Value="0"/>
+						<Property Name="EQSlider4" Type="Real32" Value="1.5"/>
+						<Property Name="EQSlider5" Type="Real32" Value="0.8"/>
+						<Property Name="EQSlider6" Type="Real32" Value="0"/>
+						<Property Name="EQSlider7" Type="Real32" Value="1"/>
+						<Property Name="EQSlider8" Type="Real32" Value="0.51"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real32" Value="1"/>
+						<Property Name="MasterLevel" Type="Real32" Value="7"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

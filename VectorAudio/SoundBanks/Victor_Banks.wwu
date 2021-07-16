@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D8AFC4EF-D94E-40C3-868D-DFE22FCA4E7D}" SchemaVersion="85" RootDocumentID="{1BD195E2-2704-40BE-ACB2-44136327DFDE}">
+	<SoundBanks>
+		<WorkUnit Name="Victor_Banks" ID="{D8AFC4EF-D94E-40C3-868D-DFE22FCA4E7D}" OwnerID="{1BD195E2-2704-40BE-ACB2-44136327DFDE}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundBank Name="Victor_SFX" ID="{E18FDC95-59C7-4D57-B253-5A99C882CF53}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Robot_Vic_SDK" ID="{9380D9E3-7016-4303-A8AA-2802A9926066}" WorkUnitID="{9380D9E3-7016-4303-A8AA-2802A9926066}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Robot_Vic_SDK" ID="{50D88102-FC12-4627-A121-C60BBB3AA878}" WorkUnitID="{50D88102-FC12-4627-A121-C60BBB3AA878}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Robot_Vic_Sfx" ID="{2681AECF-C4FE-49C4-8BB1-7D67037AD367}" WorkUnitID="{2681AECF-C4FE-49C4-8BB1-7D67037AD367}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Robot_Vic_Sfx" ID="{0141C1BB-4E6C-4B0E-AA2A-564AC5949FA0}" WorkUnitID="{0141C1BB-4E6C-4B0E-AA2A-564AC5949FA0}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Victor_VO" ID="{9CDF7440-AEB9-4FC0-ACC0-8EBA71966AF3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Robot_Vic_Vo" ID="{E26DC98D-023A-440C-ACD9-00E63A63BEDE}" WorkUnitID="{E26DC98D-023A-440C-ACD9-00E63A63BEDE}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Robot_Vic_Vo" ID="{011C3BF9-C9DA-45CC-8096-A404A30CB65F}" WorkUnitID="{011C3BF9-C9DA-45CC-8096-A404A30CB65F}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Victor_Dev" ID="{282BB8D7-2781-43D8-B75E-99700F4269C6}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Dev_Debug_Factory" ID="{6205CF34-B0A7-431E-8FCA-5DE8DDA77ADF}" WorkUnitID="{6205CF34-B0A7-431E-8FCA-5DE8DDA77ADF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Dev_Debug" ID="{470F98B0-FB5C-485A-9A5A-74A01CD10A50}" WorkUnitID="{470F98B0-FB5C-485A-9A5A-74A01CD10A50}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Victor_Global_Data" ID="{3E6B8F57-8324-4922-89A8-C99927398B50}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Filter="3" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Victor_UI" ID="{6E76ECFD-E1BC-4618-90FA-C2D287EAD097}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Dev_Debug" ID="{51944AE8-45A2-49BB-871A-8800C447687D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Dev_Debug" ID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}" WorkUnitID="{34995045-CC41-40DD-9BE3-137C54E6BB6C}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Victor" ID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Robot_Vic_Vo" ID="{011C3BF9-C9DA-45CC-8096-A404A30CB65F}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Sfx" ID="{2681AECF-C4FE-49C4-8BB1-7D67037AD367}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_SDK" ID="{9380D9E3-7016-4303-A8AA-2802A9926066}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

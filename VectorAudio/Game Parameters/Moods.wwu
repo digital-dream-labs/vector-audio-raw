@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3565DBC8-DADB-4BC8-86A3-3CA9DD2175D6}" SchemaVersion="85" RootDocumentID="{D7D36728-07ED-45F4-872F-DF58B94CA436}">
+	<GameParameters>
+		<WorkUnit Name="Moods" ID="{3565DBC8-DADB-4BC8-86A3-3CA9DD2175D6}" OwnerID="{988B18FE-E31F-45AF-9AE8-D053B9B55D97}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="Robot_Vic_Confident" ID="{9C331B37-98A0-4E68-AC27-376666C83291}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Happy" ID="{665F3EFF-C050-449A-9E60-26EFDD912036}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Social" ID="{149793D2-505B-415D-AC25-C27BE8E6F939}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.79"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

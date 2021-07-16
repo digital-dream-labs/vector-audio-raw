@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9CDA035D-9420-4E82-85CC-7FCAE595F843}" SchemaVersion="85" RootDocumentID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}">
+	<Switches>
+		<WorkUnit Name="Vic_Robot_Stimulation_Switch" ID="{9CDA035D-9420-4E82-85CC-7FCAE595F843}" OwnerID="{43BBE686-BB9A-458A-8342-2E52CA5713C4}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="Robot_Vic_Stim_Switch" ID="{FFA9F3F4-9CF0-41A7-AD63-C1557A416604}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Stim_01" ID="{65A0A53B-9367-45AB-B8DA-17DD5A9D67DE}"/>
+						<Switch Name="Stim_02" ID="{0822C5E9-48E0-4185-A46C-C580CAC29C5A}"/>
+						<Switch Name="Stim_03" ID="{D1936A06-AAB4-4267-90BA-65ABD6FDBE02}"/>
+						<Switch Name="Stim_04" ID="{3D36DA29-7B65-4940-92C0-04C8EE986F9B}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}"/>
+						<Curve Name="" ID="{944896FF-D93C-487A-8C6E-F1BC00F6549C}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.001</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.002</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.32</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.8</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Robot_Vic_Stim_Switch_Old_Reference_Only" ID="{3439E8B6-14B2-406F-BB99-B24D5F97599D}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Stim_01" ID="{E25967EB-7E59-4C68-ACC8-2784D18795D5}"/>
+						<Switch Name="Stim_02" ID="{32EF0FFB-5D25-4A14-B19C-1CAC9E9F7EBE}"/>
+						<Switch Name="Stim_03" ID="{85CA1DE2-18C7-4D4D-A120-F940211A0EBB}"/>
+						<Switch Name="Stim_04" ID="{E5132110-169E-475F-8532-E08593A09C4E}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}"/>
+						<Curve Name="" ID="{12845BF4-DE66-4851-98A9-BB5BF5D2B46D}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.001</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.002</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.333</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.334</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.5</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.666666666666667</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

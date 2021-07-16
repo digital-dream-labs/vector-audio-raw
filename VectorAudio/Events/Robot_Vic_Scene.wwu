@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AD721151-52B0-4DD0-9311-5A3614A3D2B8}" SchemaVersion="85" RootDocumentID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}">
+	<Events>
+		<WorkUnit Name="Robot_Vic_Scene" ID="{AD721151-52B0-4DD0-9311-5A3614A3D2B8}" OwnerID="{2681AECF-C4FE-49C4-8BB1-7D67037AD367}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play__Robot_Vic_Scene__Anim_Abort" ID="{AEECE2AA-479E-404D-BF9D-B24645350FDF}">
+					<ChildrenList>
+						<Action Name="" ID="{3576D821-598E-40F7-B6FB-4B82839A5405}" ShortID="121678442">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{2BFF7142-CC2E-4523-B5AC-C6F60FB034B6}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_Vic_Sfx__How_Old_Loop_WM" ID="{DCAFAC2E-9D8F-487E-9D04-4DBF383179C7}" WorkUnitID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{544BDE67-CF22-42B2-B220-AABD4FBAEFE5}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_Vic_Sfx__Snowglobe_Chime_Loop_Fast_WM" ID="{84AAF3C3-5E4A-4D37-AEEB-DA240DE958F8}" WorkUnitID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{F5E3EF00-6EA9-4792-BFD7-2FB6C7B5BF17}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_Vic_Sfx__Snowglobe_Chime_Loop_Medium_WM" ID="{2A4EC64A-7FCF-414D-96CB-C2173443021E}" WorkUnitID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{F4434809-3CF5-49CD-B95F-DC77A796742E}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_Vic_Sfx__Snowglobe_Wind_Loop_Fast_WM" ID="{1B382863-4CFF-4897-AF7F-11C2C96114F2}" WorkUnitID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{9FD08B22-A023-4945-9BEB-37767C181B19}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_Vic_Sfx__Low_Light_Charging_Loop" ID="{55AE8FC9-3F59-45DB-8A37-8A0A0E9F76C2}" WorkUnitID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Scene__Mov_RTPC_Reset" ID="{3AEA1DDE-1CD9-4A12-9B0A-C3F292BFDE5A}">
+					<ChildrenList>
+						<Action Name="" ID="{07E5D987-A39C-4FE3-A4AC-30E47F6C0BE8}" ShortID="1029320348">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="39"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Head_Speed" ID="{09BAC565-9262-4809-AD56-3E406E581A1F}" WorkUnitID="{5EAC22F0-5938-4883-9941-A49181378B83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Scene__Quiet_On" ID="{165F3495-06C5-43B8-A8FC-8EB28D25E284}">
+					<ChildrenList>
+						<Action Name="" ID="{386A3F09-BAC6-487E-A354-179C56019DE4}" ShortID="791652954">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Quiet_On" ID="{B1E9A966-50FC-4BC9-8350-FB3245FDD2A4}" WorkUnitID="{D8080713-8F94-4FF4-A044-AFDDE30B7C16}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Scene__Quiet_Off" ID="{B091C2E9-D3F8-44B6-B6F1-E06FF5C3CA0B}">
+					<ChildrenList>
+						<Action Name="" ID="{15FC73CE-6165-4AD2-AB17-37B935A361C1}" ShortID="178747370">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Quiet_Off" ID="{50B488B9-FC4F-421A-8FC2-31C67A132064}" WorkUnitID="{D8080713-8F94-4FF4-A044-AFDDE30B7C16}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Scene__Low_Power_Mode_On" ID="{5A9565E3-C3D8-4138-AFAE-CA14AB042705}">
+					<ChildrenList>
+						<Action Name="" ID="{A6EC68C0-F200-4A3D-9732-6B3C9E2AC5B7}" ShortID="732983421">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Low_Power_Mode_On" ID="{6AC696AE-C4DE-40F8-BF6B-3D7CF4E0ED87}" WorkUnitID="{CCDC75EF-60A9-44D8-8B09-4EE7F30D1AD3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Scene__Low_Power_Mode_Off" ID="{1B7BF37B-FEFD-494E-89F0-8B1E0862FD25}">
+					<ChildrenList>
+						<Action Name="" ID="{33C65723-6F59-4CC3-A23C-CD14B5557605}" ShortID="74086524">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Low_Power_Mode_Off" ID="{5CCC8628-8474-420A-8147-E61A0F1472F7}" WorkUnitID="{CCDC75EF-60A9-44D8-8B09-4EE7F30D1AD3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic_Scene__Working_On_It_On" ID="{1E937A98-D4AA-4695-BD09-F0811572A1E5}"/>
+				<Event Name="Play__Robot_Vic_Scene__Working_On_It_Off" ID="{76ED7DC5-A41B-4FFB-A932-7F9276583792}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{076FD2E4-CA36-4973-87ED-D101AFFBDB19}" SchemaVersion="85" RootDocumentID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}">
+	<Switches>
+		<WorkUnit Name="Tread_Switches" ID="{076FD2E4-CA36-4973-87ED-D101AFFBDB19}" OwnerID="{43BBE686-BB9A-458A-8342-2E52CA5713C4}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="Robot_Vic_Tread_Speed" ID="{3E856836-AFF2-4206-8CAE-F28B251F700C}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Robot_Vic_Tread_Forward" ID="{2175FF52-95E1-4BAC-B27A-D3595E9DFAD2}"/>
+						<Switch Name="Robot_Vic_Tread_Backward" ID="{0019E587-0FCE-4A0F-93CF-C3F5BDD9CF03}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Robot_Vic_Tread_Speed" ID="{98C33070-F370-4A68-8130-F686150B29D8}"/>
+						<Curve Name="" ID="{3889BDEE-4D81-4474-92C0-4F23F51AB2B2}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>-1</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>-0.01</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.01504</XPos>
+									<YPos>0</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.01604</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Robot_Vic_Tread_Drive" ID="{FA4DFE98-26AC-43F7-ABCF-E910082C2C92}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Robot_Vic_Tread_Drive" ID="{EC68DB57-1010-4088-A9A2-36ADDCD6859C}"/>
+						<Switch Name="Robot_Vic_Tread_Spin" ID="{4CA75085-59FE-40EE-87C6-4E979E2EF138}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Robot_Vic_Tread_Spin_Speed" ID="{FF1D8437-5CC2-4483-B2D7-FE1C19DD6E15}"/>
+						<Curve Name="" ID="{7B1519E3-6574-43A4-A026-756BF5B04885}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>-1</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A8C88D15-1427-4BC2-B6DB-6FD56785A3DA}" SchemaVersion="85" RootDocumentID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}">
+	<Switches>
+		<WorkUnit Name="Vic_Robot_External" ID="{A8C88D15-1427-4BC2-B6DB-6FD56785A3DA}" OwnerID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="Robot_Vic_External_Processing" ID="{C74DBCB5-2B17-4BE1-82A8-E94DBE5730DE}">
+					<ChildrenList>
+						<Switch Name="Unprocessed" ID="{6ED0F990-700A-40B8-BD84-E7FDDA08CF28}"/>
+						<Switch Name="Default_Processed" ID="{C883CEC8-E31F-499E-84E6-24AE343056B2}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Robot_Vic_External_Input_Source" ID="{C36B070F-749D-4895-8DAD-083420B69374}">
+					<ChildrenList>
+						<Switch Name="Wave_Portal" ID="{860EDEEB-0AA8-4520-9B5A-D60E7E61D621}"/>
+						<Switch Name="Streaming_Wave_Portal" ID="{A1A7B585-5E71-4AE1-85CA-8C8A2473E282}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

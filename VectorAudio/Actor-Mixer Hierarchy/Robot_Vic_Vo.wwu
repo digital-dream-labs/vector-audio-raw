@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E26DC98D-023A-440C-ACD9-00E63A63BEDE}" SchemaVersion="85" RootDocumentID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}">
+	<AudioObjects>
+		<WorkUnit Name="Robot_Vic_Vo" ID="{E26DC98D-023A-440C-ACD9-00E63A63BEDE}" OwnerID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Robot_Vic_Vo__External" ID="{0F7BE290-1603-4CB2-A336-A42D443489E4}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

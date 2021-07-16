@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6205CF34-B0A7-431E-8FCA-5DE8DDA77ADF}" SchemaVersion="85" RootDocumentID="{4B9049D7-A855-4C5A-A339-B0A20AA66017}">
+	<AudioObjects>
+		<WorkUnit Name="Dev_Debug_Factory" ID="{6205CF34-B0A7-431E-8FCA-5DE8DDA77ADF}" OwnerID="{4B9049D7-A855-4C5A-A339-B0A20AA66017}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Dev_Victor_Factory" ID="{09F04B36-7246-43B5-9EBA-3A5D6E30D0BD}" ShortID="341259400">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Robot_Vic_ADPCM" ID="{1DBA7C80-642C-49ED-98DB-85D881EDAD56}" WorkUnitID="{05636567-B5E9-4CA0-8AD7-D1AC9925F2FA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Dev_General_Bus" ID="{8F7BDC5A-741B-417E-91A0-0737215A1C92}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Dev_Robot_Factory__Tone_1k_1sec" ID="{B1150D25-814F-4B73-A4F3-2B97277AEDB7}" ShortID="641957821">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{C3C0D36F-D351-4EE7-A821-1AAC63538C7A}" ShortID="300687591" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{C3C0D36F-D351-4EE7-A821-1AAC63538C7A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot_Factory__Tone_1k_5sec" ID="{E9736FB5-D257-44B0-9CEF-7997439B25A6}" ShortID="283799969">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Tone Generator" ID="{961E1ED2-FEDC-40BE-BCD8-EBC6AD9DA53A}" ShortID="93872374" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+									<PropertyList>
+										<Property Name="FixDur" Type="Real32" Value="5"/>
+										<Property Name="WaveGain" Type="Real32" Value="0"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Tone Generator" ID="{961E1ED2-FEDC-40BE-BCD8-EBC6AD9DA53A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dev_Robot_Factory__Scan_Loop_Stop_Bell" ID="{762D1C4C-87E3-4A70-BE40-AD65E277B3FC}" ShortID="701464182">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLantency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>15</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-200</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EB596C9F-CFC0-4FB6-A510-0D10D12AA4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6F809D43-65AC-450F-8009-E235D371B934}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dev_Robot__Scan_Loop_Stop_Bell_WM" ID="{8F84EF06-42EE-4DB9-A5E5-27E6146B6DC6}" ShortID="785223634">
+									<Language>SFX</Language>
+									<AudioFile>Dev_Robot__Scan_Loop_Stop_Bell_WM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dev_Robot__Scan_Loop_Stop_Bell_WM" ID="{8F84EF06-42EE-4DB9-A5E5-27E6146B6DC6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

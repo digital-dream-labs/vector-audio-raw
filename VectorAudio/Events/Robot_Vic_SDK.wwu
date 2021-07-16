@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9380D9E3-7016-4303-A8AA-2802A9926066}" SchemaVersion="85" RootDocumentID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}">
+	<Events>
+		<WorkUnit Name="Robot_Vic_SDK" ID="{9380D9E3-7016-4303-A8AA-2802A9926066}" OwnerID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play__Robot_Vic__External_SDK_Playback_01" ID="{283369D6-1347-4BB8-A443-491368684ADA}">
+					<ChildrenList>
+						<Action Name="" ID="{5AB1E19B-97F1-4004-B3F5-CDBBF7651A51}" ShortID="601243614">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic__External_SDK_Playback_01" ID="{99363092-D519-48F2-A471-3239C053BD61}" WorkUnitID="{50D88102-FC12-4627-A121-C60BBB3AA878}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic__External_SDK_Playback_02" ID="{B03F8F7F-9BDB-4433-9B7B-22D0D6CAA546}">
+					<ChildrenList>
+						<Action Name="" ID="{4AFCA76B-7D6E-43F2-ACB9-A5FE93E2D889}" ShortID="707838980">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic__External_SDK_Playback_02" ID="{E1E672DF-BE98-4945-9C7E-C50240F3CCC0}" WorkUnitID="{50D88102-FC12-4627-A121-C60BBB3AA878}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop__Robot_Vic__External_SDK_Playback_01" ID="{A29D7A16-5B58-448D-886B-FC0D7010776D}">
+					<ChildrenList>
+						<Action Name="" ID="{885E0730-CA49-4F90-85DB-5B6E133AE367}" ShortID="346404492">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic__External_SDK_Playback_01" ID="{99363092-D519-48F2-A471-3239C053BD61}" WorkUnitID="{50D88102-FC12-4627-A121-C60BBB3AA878}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop__Robot_Vic__External_SDK_Playback_02" ID="{F692DFAB-4E3A-4A74-8657-8713E26A4A6C}">
+					<ChildrenList>
+						<Action Name="" ID="{5AD3F591-9E64-4944-B148-923FC80A54B4}" ShortID="551924246">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic__External_SDK_Playback_02" ID="{E1E672DF-BE98-4945-9C7E-C50240F3CCC0}" WorkUnitID="{50D88102-FC12-4627-A121-C60BBB3AA878}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

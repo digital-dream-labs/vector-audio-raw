@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{43BBE686-BB9A-458A-8342-2E52CA5713C4}" SchemaVersion="85" RootDocumentID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}">
+	<Switches>
+		<WorkUnit Name="Vic_Robot_Sfx" ID="{43BBE686-BB9A-458A-8342-2E52CA5713C4}" OwnerID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Head_and_Lift_Switches" ID="{8D1D64E5-07FF-4B40-BD93-1D03CE551D3D}" PersistMode="Reference"/>
+				<WorkUnit Name="Tread_Switches" ID="{076FD2E4-CA36-4973-87ED-D101AFFBDB19}" PersistMode="Reference"/>
+				<WorkUnit Name="Vic_Robot_Stimulation_Switch" ID="{9CDA035D-9420-4E82-85CC-7FCAE595F843}" PersistMode="Reference"/>
+				<WorkUnit Name="Vic_Robot_Mood_Switch" ID="{41E2F387-2E4D-43AF-AC25-F2E9D45322A8}" PersistMode="Reference"/>
+				<WorkUnit Name="Vic_Robot_Scrn_Procedural_Shift_Length" ID="{87F4236E-FC1F-4B53-AE82-F15724868A25}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="Victor" ID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Robot_Vic_Sfx" ID="{0141C1BB-4E6C-4B0E-AA2A-564AC5949FA0}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Vo" ID="{E26DC98D-023A-440C-ACD9-00E63A63BEDE}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_SDK" ID="{50D88102-FC12-4627-A121-C60BBB3AA878}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

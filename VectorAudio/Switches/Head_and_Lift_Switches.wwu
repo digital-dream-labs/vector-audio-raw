@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8D1D64E5-07FF-4B40-BD93-1D03CE551D3D}" SchemaVersion="85" RootDocumentID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}">
+	<Switches>
+		<WorkUnit Name="Head_and_Lift_Switches" ID="{8D1D64E5-07FF-4B40-BD93-1D03CE551D3D}" OwnerID="{43BBE686-BB9A-458A-8342-2E52CA5713C4}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="Robot_Vic_Head_Direction" ID="{255C6290-04D8-44AD-A871-B1CA35B82C43}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Robot_Vic_Head_Direction_Down" ID="{3D15611B-D3A3-4914-9691-82D4C80B899D}"/>
+						<Switch Name="Robot_Vic_Head_Direction_Up" ID="{CA308B1C-38FD-422F-880F-473686353477}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Robot_Vic_Head_Speed" ID="{09BAC565-9262-4809-AD56-3E406E581A1F}"/>
+						<Curve Name="" ID="{41F1489A-D994-4173-A582-BF61301E889C}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>-1</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.01131</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Robot_Vic_Lift_Direction" ID="{AE05F86B-BE30-4341-89FF-81FDE55511DB}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Robot_Vic_Lift_Direction_Down" ID="{EE7C8C8F-037D-44A8-832F-208DC9DDB2E2}"/>
+						<Switch Name="Robot_Vic_Lift_Direction_Up" ID="{CD290533-8020-4701-A1D7-4E3AB92DA6C0}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Robot_Vic_Lift_Speed" ID="{ED97F06C-B50D-436B-BEE7-AC41AFBA8E6A}"/>
+						<Curve Name="" ID="{BC05994D-0534-4CF1-857E-8578102FF287}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>-1</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.00258</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Robot_Vic_Mvmt_Size" ID="{A88B93B9-25B5-4ABB-95B3-8049582E8168}">
+					<ChildrenList>
+						<Switch Name="Robot_Vic_Mvmt_Long" ID="{9261D65E-F2AF-4B8C-BCD5-F914BB371B0A}"/>
+						<Switch Name="Robot_Vic_Mvmt_Short" ID="{4CBBF23C-16DD-401B-AA35-B3D3912E3870}"/>
+						<Switch Name="Robot_Vic_Mvmt_Micro" ID="{754CB316-7C6E-44B3-BB24-1C5C98F3E621}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A7E1D73F-55AE-499B-A756-7007C4570879}" SchemaVersion="85" RootDocumentID="{863E6B60-21EE-455C-B1CD-4DE4E183D106}">
+	<Events>
+		<WorkUnit Name="Robot_Vic_Vo__External" ID="{A7E1D73F-55AE-499B-A756-7007C4570879}" OwnerID="{011C3BF9-C9DA-45CC-8096-A404A30CB65F}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play__Robot_Vic__External_Voice_Message" ID="{2395C973-4D89-452C-83BB-4E46558F31D3}">
+					<ChildrenList>
+						<Action Name="" ID="{AB834664-7C23-4ADA-8094-97977428AD9A}" ShortID="872409291">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic__External_Voice_Message" ID="{350C3B7C-1BB0-45F3-8A01-FD11D015FBA2}" WorkUnitID="{0F7BE290-1603-4CB2-A336-A42D443489E4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__Robot_Vic__External_Voice_Text" ID="{90BAF5D1-0EBF-41F6-9B65-7A4AE35E977C}">
+					<ChildrenList>
+						<Action Name="" ID="{D1E3296F-8627-4B2E-95F2-6A91F7974F20}" ShortID="548774721">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic__External_Voice_Text_Processing" ID="{93977BDD-0ACB-40C5-913C-8D38AE1C647F}" WorkUnitID="{0F7BE290-1603-4CB2-A336-A42D443489E4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B7E5A4CF-F92F-4BB8-9466-231244610DA8}" ShortID="184282793">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Head_and_Lift_Anim_By_Mood" ID="{0FB226AB-D408-4F61-974C-24A3389486DB}" WorkUnitID="{A9E5378C-8671-4B9A-A50E-ABC781A15C0E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{35D791E7-DA75-4CC7-AED7-2ED96D6F3D7E}" ShortID="265553747">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Wake_Word_Success_Processing_WM" ID="{14F4A2F0-FFF0-4B90-8E3F-228D2EE17077}" WorkUnitID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9D025A36-078A-4725-8C5F-3F7766CB8AA5}" ShortID="49585488">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Emote" ID="{C7D6A39E-5DAD-4AF3-AD8B-0BCD81A2CCE3}" WorkUnitID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{783DEDB7-DA8A-406E-824C-A16E04A47A89}" ShortID="512515984">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Vic_Sfx__Emote_Stim" ID="{4E129B8F-926F-465F-A074-B7FEA18B37DF}" WorkUnitID="{226848F9-00AB-4CD8-9571-6A4B66C7ADCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

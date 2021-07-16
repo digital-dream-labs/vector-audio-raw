@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6F809D43-65AC-450F-8009-E235D371B934}" SchemaVersion="85">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{6F809D43-65AC-450F-8009-E235D371B934}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BypassEffect0" Type="bool">
+							<ValueList>
+								<Value Platform="Victor_Linux">False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="BypassEffect1" Type="bool">
+							<ValueList>
+								<Value Platform="Victor_Linux">False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="BypassEffect2" Type="bool">
+							<ValueList>
+								<Value Platform="Victor_Linux">False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="BypassEffect3" Type="bool">
+							<ValueList>
+								<Value Platform="Victor_Linux">False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="DivergenceCenter" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{B73C3ACF-0CFC-43EF-90D5-27DA6648E67B}" WorkUnitID="{D476FC69-C239-46D8-93D5-03353CF83D32}"/>
+						</Reference>
+						<Reference Name="AudioDevice" Platform="Dev_Mac" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{B73C3ACF-0CFC-43EF-90D5-27DA6648E67B}" WorkUnitID="{D476FC69-C239-46D8-93D5-03353CF83D32}"/>
+						</Reference>
+						<Reference Name="AudioDevice" Platform="Victor_Linux"/>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="Robot_Vic_Master_EQ" ID="{D4C901B4-7AE6-4F97-BC78-B0C33FC2B78B}" WorkUnitID="{CA27D626-FD35-45A3-A3C8-BFB3E9E1C367}"/>
+						</Reference>
+						<Reference Name="Effect0" Platform="Victor_Linux" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="Robot_Vic_Master_EQ" ID="{D4C901B4-7AE6-4F97-BC78-B0C33FC2B78B}" WorkUnitID="{CA27D626-FD35-45A3-A3C8-BFB3E9E1C367}"/>
+						</Reference>
+						<Reference Name="Effect1" Platform="Victor_Linux"/>
+						<Reference Name="Effect2" Platform="Victor_Linux"/>
+						<Reference Name="Effect3" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Robot_Vic_Master_Limiter" ID="{F4C12DED-1460-4C44-9D86-DB7B37E48DAB}" WorkUnitID="{CA27D626-FD35-45A3-A3C8-BFB3E9E1C367}"/>
+						</Reference>
+						<Reference Name="Effect3" Platform="Victor_Linux" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Robot_Vic_Master_Limiter" ID="{F4C12DED-1460-4C44-9D86-DB7B37E48DAB}" WorkUnitID="{CA27D626-FD35-45A3-A3C8-BFB3E9E1C367}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Victor_Robot" ID="{AD23031D-ECED-4F64-9805-25FFB8B6F2D8}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>16641</Value>
+									</ValueList>
+								</Property>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{D1A8A1BC-887E-4C4E-8E1D-E8B4F21647E8}" ShortID="289476658">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D5F3FEEC-63ED-4B6C-A1D5-5E4DD8FA5F9C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="DivergenceCenter" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Victor_Robot_External" ID="{3DC08233-FD5F-4E50-A956-A9D3A42B1D5B}">
+									<PropertyList>
+										<Property Name="DivergenceCenter" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{C97EF1BF-38A1-433D-8F2C-67163C5AE76C}" ShortID="652729276" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Victor_Robot_SFX_Head_Lift" ID="{97344B79-D08A-4870-A4AA-3D816ED19544}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>0.5</FadeInTime>
+												<FadeOutTime>0.100000001490116</FadeOutTime>
+												<FadeCurve>FadeLog1</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="Victor_Robot_SFX_Procedural" ID="{790078FA-6943-42DB-B458-6D161D98A3CE}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>0.5</FadeInTime>
+												<FadeOutTime>0.100000001490116</FadeOutTime>
+												<FadeCurve>FadeLog1</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="Victor_Robot_SFX_Character_Buses" ID="{2DD71EE5-37D4-4091-B3DE-6BCEBCC1089A}">
+									<PropertyList>
+										<Property Name="DivergenceCenter" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Victor_Robot_SFX_Head_Lift" ID="{97344B79-D08A-4870-A4AA-3D816ED19544}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{9738FCA5-80A5-4885-9805-BD5C97A4ECFA}" ShortID="693561866">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}" WorkUnitID="{3565DBC8-DADB-4BC8-86A3-3CA9DD2175D6}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{903B01DE-924A-409F-A4FB-9AC251F2B741}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-15</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.199</XPos>
+																		<YPos>-15</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.4</XPos>
+																		<YPos>-12</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.7</XPos>
+																		<YPos>-8</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+														<RTPC Name="" ID="{F0C422C2-D4CB-417E-A4A4-D9DA08BEFB34}" ShortID="910717670">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Robot_Vic_Volume_Animation" ID="{14BA5AB0-5DC2-4E37-8798-0A8EAA3357FC}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{DD379B7D-0586-48AF-9B94-EE3AE4B079CD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="DivergenceCenter" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{D2D7CBB8-6C91-43DB-B7D1-3AD0ED25238E}" ShortID="706164603">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Robot_Vic_Purr_Level" ID="{76509EEF-F12A-4AEF-91CB-0686E62B48E2}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{D4195850-05D3-4F94-B4F4-5FC2F50FCBE4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-54</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.001</XPos>
+																		<YPos>-1</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.48387</XPos>
+																		<YPos>59</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.69942</XPos>
+																		<YPos>70</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.999</XPos>
+																		<YPos>100</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>28</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+												<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect3" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<ObjectRef Name="Victor_Meter_Bus_Sfx" ID="{52098365-8DB2-489C-9F7A-0B1A5C5514CB}" WorkUnitID="{CA27D626-FD35-45A3-A3C8-BFB3E9E1C367}"/>
+												</Reference>
+											</ReferenceList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Robot_Vic_Vc" ID="{8EC0181B-7B84-4570-8DD7-3EEF035EA10B}"/>
+													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="Robot_Vic_Quiet" ID="{C05A5616-B4E5-431C-844A-5EB6D0593FDE}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Quiet_Off" ID="{50B488B9-FC4F-421A-8FC2-31C67A132064}"/>
+														<State Name="" ID="{C744EF27-86CF-4BA3-9DED-3A6252FA1839}" ShortID="500240238"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Vc_Off" ID="{D5F681D9-F68D-4324-A43C-D154F10C86FC}"/>
+														<State Name="" ID="{2DE3ACE3-C890-49B0-B5EC-94B611567BBA}" ShortID="972354238"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Vc_On" ID="{362A0186-CB62-4898-8CAB-61F270BE2103}"/>
+														<State Name="" ID="{8E59DDF1-0277-46A7-B6B3-EB8C78D45345}" ShortID="1066837796">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Quiet_On" ID="{B1E9A966-50FC-4BC9-8350-FB3245FDD2A4}"/>
+														<State Name="" ID="{8B7BDBE0-DD66-49D4-A172-54BAC940FFE4}" ShortID="536642754">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-15"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<DuckingList>
+												<DuckItem>
+													<BusRef Name="Victor_Robot_SFX_Procedural" ID="{790078FA-6943-42DB-B458-6D161D98A3CE}"/>
+													<DuckingParam>
+														<Volume>0</Volume>
+														<FadeInTime>0.100000001490116</FadeInTime>
+														<FadeOutTime>0.100000001490116</FadeOutTime>
+														<FadeCurve>FadeLinear</FadeCurve>
+														<TargetProp>BusVolume</TargetProp>
+													</DuckingParam>
+												</DuckItem>
+											</DuckingList>
+										</Bus>
+										<Bus Name="Victor_Robot_SFX_Procedural" ID="{790078FA-6943-42DB-B458-6D161D98A3CE}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{DB1894A0-7F88-40F0-95E7-59983D3EEA0B}" ShortID="539828000">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}" WorkUnitID="{3565DBC8-DADB-4BC8-86A3-3CA9DD2175D6}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{D35854FC-650C-48F5-988E-A7B51A230166}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-8</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.199</XPos>
+																		<YPos>-8</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.3</XPos>
+																		<YPos>-4</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.6</XPos>
+																		<YPos>-2</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="DivergenceCenter" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Robot_Vic_Vc" ID="{8EC0181B-7B84-4570-8DD7-3EEF035EA10B}"/>
+													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="Robot_Vic_Quiet" ID="{C05A5616-B4E5-431C-844A-5EB6D0593FDE}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Quiet_Off" ID="{50B488B9-FC4F-421A-8FC2-31C67A132064}"/>
+														<State Name="" ID="{C6C70C73-048C-4F3B-92B3-8383DB58E0BC}" ShortID="281981482"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Vc_Off" ID="{D5F681D9-F68D-4324-A43C-D154F10C86FC}"/>
+														<State Name="" ID="{B14B081A-2A61-4778-AA9D-BFB9401BE435}" ShortID="1022406424"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Vc_On" ID="{362A0186-CB62-4898-8CAB-61F270BE2103}"/>
+														<State Name="" ID="{0CF2218C-F487-412D-9588-91EE57362430}" ShortID="367278153">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Quiet_On" ID="{B1E9A966-50FC-4BC9-8350-FB3245FDD2A4}"/>
+														<State Name="" ID="{B87BEA56-1C92-4FED-B33B-CCB9474A8B55}" ShortID="446431235">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-15"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</Bus>
+										<Bus Name="Victor_Robot_SFX_Screen" ID="{9436E7F2-A265-4541-82C8-03E63EF2D53C}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{8ACC1BB4-ACA3-4F55-85D6-F7E8706CFC95}" ShortID="151787835">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}" WorkUnitID="{3565DBC8-DADB-4BC8-86A3-3CA9DD2175D6}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{9223A1E2-347D-44C6-8AC7-1E3982A8505A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-15</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.199</XPos>
+																		<YPos>-15</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.2</XPos>
+																		<YPos>-4</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.6</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="DivergenceCenter" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Victor_Robot_SFX_Stim" ID="{861ECAF7-4FF6-4094-9FA7-EC7F47CA7D32}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{EECC42BE-56B5-4B66-BED6-9D7ED4F7ABEB}" ShortID="35224378">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Robot_Vic_Stimulation" ID="{D236CB09-A6FC-4CF1-832D-D41D5069C6F3}" WorkUnitID="{3565DBC8-DADB-4BC8-86A3-3CA9DD2175D6}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{42E635D3-A041-4AF9-A889-D42316242D9B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-15</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.199</XPos>
+																		<YPos>-15</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.2</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.599</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.7</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="DivergenceCenter" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Robot_Vic_Quiet" ID="{C05A5616-B4E5-431C-844A-5EB6D0593FDE}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Quiet_Off" ID="{50B488B9-FC4F-421A-8FC2-31C67A132064}"/>
+														<State Name="" ID="{1696DE7A-05AF-4E71-B128-BBC87FA935AF}" ShortID="408088512"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Robot_Vic_Quiet_On" ID="{B1E9A966-50FC-4BC9-8350-FB3245FDD2A4}"/>
+														<State Name="" ID="{EEEDBABE-F5B7-4CD9-9E7F-AC0E027BED3D}" ShortID="983223795"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</Bus>
+										<Bus Name="Victor_Robot_SFX_No_Stim" ID="{A48E4AD9-DA7A-4975-A80D-5753F9CE65A0}">
+											<PropertyList>
+												<Property Name="DivergenceCenter" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Victor_Robot_SFX_High_Priority" ID="{33209F74-74B2-4E86-A010-6C9FB5A4105E}">
+											<PropertyList>
+												<Property Name="DivergenceCenter" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ChildrenList>
+												<Bus Name="Victor_Robot_SFX_High_Priority_Earcon" ID="{6AAA06A7-90D1-4A83-9028-29FB454FD2AC}">
+													<PropertyList>
+														<Property Name="DivergenceCenter" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+												</Bus>
+												<Bus Name="Victor_Robot_SFX_High_Priority_Petting" ID="{DE9F4634-EB97-4058-97C1-7F9086A38A37}">
+													<PropertyList>
+														<Property Name="DivergenceCenter" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+												</Bus>
+											</ChildrenList>
+										</Bus>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Robot_Vic_Quiet" ID="{C05A5616-B4E5-431C-844A-5EB6D0593FDE}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="Robot_Vic_Vc" ID="{8EC0181B-7B84-4570-8DD7-3EEF035EA10B}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="Robot_Vic_Volume" ID="{FDA717EE-DA35-4586-830E-DB39C155DFE8}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Low" ID="{A833F4DD-D1A4-413F-9FD5-EEC0FCBE6029}"/>
+												<State Name="" ID="{CECD8A58-2219-44D5-85B5-4C728C608ED4}" ShortID="1045426916">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-19"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Robot_Vic_Quiet_Off" ID="{50B488B9-FC4F-421A-8FC2-31C67A132064}"/>
+												<State Name="" ID="{40AE0F60-F064-4662-A2A8-0424CBC02EB3}" ShortID="804926776"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Robot_Vic_Vc_Off" ID="{D5F681D9-F68D-4324-A43C-D154F10C86FC}"/>
+												<State Name="" ID="{417E5429-E368-4367-A35B-7AA6279FDC54}" ShortID="500859634"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MediumLow" ID="{6BA29384-FAB8-472F-90AF-DD0B6992F3FE}"/>
+												<State Name="" ID="{44AEC835-4165-485A-9548-8B12CAC7FCEA}" ShortID="847124879">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-14"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Robot_Vic_Vc_On" ID="{362A0186-CB62-4898-8CAB-61F270BE2103}"/>
+												<State Name="" ID="{3634F9A1-8D11-40F9-B77B-DD6446CD326E}" ShortID="314067609">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Mute" ID="{748C1760-7479-48DF-BFF7-B6D90BFC3AA9}"/>
+												<State Name="" ID="{313B7B26-62CF-4872-9B26-ADE2FBCBCED0}" ShortID="10612083">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Robot_Vic_Quiet_On" ID="{B1E9A966-50FC-4BC9-8350-FB3245FDD2A4}"/>
+												<State Name="" ID="{B1D02F7C-7F78-4CBC-940D-A3BC93686ECB}" ShortID="342955651">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-15"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{2FE31C6B-72DE-4F30-81B0-F6D0B6B24F1A}"/>
+												<State Name="" ID="{3BD735FD-756B-43F2-BF44-DCF4D8DC6074}" ShortID="552783263">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="3"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Medium" ID="{FBAEDE0F-9A3A-4F81-8057-070ABA7BFD7D}"/>
+												<State Name="" ID="{7EC01761-8D98-4F22-A51D-B4B47A468A84}" ShortID="977026342">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-8"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MediumHigh" ID="{781AA9BA-6F50-4FAE-ACF6-99B8B0B54847}"/>
+												<State Name="" ID="{6ED003F0-3842-4899-BAEF-1006A429123D}" ShortID="842054643">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-3"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{4892D314-CB90-488B-BD90-EC8D3A6E63DB}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="2.22044604925031E-16"/>
+										<Property Name="PanY" Type="Real64" Value="2.77555756156289E-17"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+						</Bus>
+						<AuxBus Name="Victor_Robot_External_Boost_01" ID="{5F17EA21-A1AF-406C-AE58-361D0151812B}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{9D8EB806-A361-4289-A48F-D2ACADBCC8D5}" ShortID="394332167">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A420D3C4-F889-4CAA-944F-8F7155587CD9}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="DivergenceCenter" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</AuxBus>
+						<AuxBus Name="Victor_Robot_External_Boost_02" ID="{432D882A-E870-4265-9682-FBCF17E127F8}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{791CCD69-413D-47BF-A6C1-95D85018560A}" ShortID="214917624">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2DDE77C8-D018-4B37-9568-B1DC1686DFB5}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="DivergenceCenter" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</AuxBus>
+						<AuxBus Name="Victor_Robot_External_Boost_03" ID="{6FB3ACA5-BB6A-4C4C-B8E3-4EA4B6F52ED9}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{71452F3E-FDD1-4EC3-B7A5-71576A9E8A93}" ShortID="636775048">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{370E3F03-F804-4113-A2DF-A483AAA4E466}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="DivergenceCenter" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</AuxBus>
+						<AuxBus Name="Victor_Robot_External_Boost_04" ID="{9395AE2C-9644-40A6-A123-0578B026EAD2}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{92F39076-CC47-41AC-AAD4-0FB48CF6BB3A}" ShortID="611970734">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Robot_Vic_Volume_Master" ID="{93B925B0-2D71-4752-8AD5-A62638294253}" WorkUnitID="{C329FBF8-7FC2-4135-A859-833123B380E0}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{3A1E09CB-0CC1-4F63-9AFE-56EB935717BC}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="DivergenceCenter" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</AuxBus>
+						<Bus Name="Dev_Bus" ID="{059A805D-6091-4AC8-A355-A75884FAEFA2}">
+							<PropertyList>
+								<Property Name="DivergenceCenter" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Dev_Squawk_Bus" ID="{3171B6A6-06BF-4297-95FB-7FF3F9524B90}">
+									<PropertyList>
+										<Property Name="DivergenceCenter" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{C464647C-4AD2-4FBE-9E39-637EA9AB4AF5}" ShortID="661820462">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Dev_Squawk_Volume" ID="{EDE1D113-6ABE-447C-94A1-6E8F3670A4FD}" WorkUnitID="{D7D36728-07ED-45F4-872F-DF58B94CA436}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{510543C8-A5CA-47C4-B19A-333DBA58C8A8}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Dev_General_Bus" ID="{8F7BDC5A-741B-417E-91A0-0737215A1C92}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>16641</Value>
+											</ValueList>
+										</Property>
+										<Property Name="DivergenceCenter" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="BusVolume"/>
+							<Property Name="BypassEffect0"/>
+							<Property Name="BypassEffect1"/>
+							<Property Name="BypassEffect2"/>
+							<Property Name="BypassEffect3"/>
+							<Property Name="Highpass"/>
+							<Property Name="Lowpass"/>
+							<Property Name="Pitch"/>
+							<Property Name="Volume"/>
+						</StatePropertyList>
+					</StateInfo>
+				</Bus>
+				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}">
+					<PropertyList>
+						<Property Name="DivergenceCenter" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{B73C3ACF-0CFC-43EF-90D5-27DA6648E67B}" WorkUnitID="{D476FC69-C239-46D8-93D5-03353CF83D32}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

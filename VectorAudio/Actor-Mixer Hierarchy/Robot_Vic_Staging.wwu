@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{25000BE6-FF4D-454F-8DA6-257837ECEB7B}" SchemaVersion="85" RootDocumentID="{0B37E867-0FEF-4BB0-A0B9-6267B36FF4D7}">
+	<AudioObjects>
+		<WorkUnit Name="Robot_Vic_Staging" ID="{25000BE6-FF4D-454F-8DA6-257837ECEB7B}" OwnerID="{0141C1BB-4E6C-4B0E-AA2A-564AC5949FA0}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Robot_Vic_Sfx_Head" ID="{13DDA285-F62E-465A-ABA6-E3E4E85C9D91}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Sfx_Lift" ID="{1EF1E610-8467-4FD0-BF8C-0018485CA89C}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Sfx_Misc" ID="{2ED5CAEE-75A3-490C-885F-8CC369AC217B}" PersistMode="Reference"/>
+				<WorkUnit Name="Robot_Vic_Sfx_Scrn" ID="{DBB7104E-06C3-4FA3-9A49-E31ED4C2AE53}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

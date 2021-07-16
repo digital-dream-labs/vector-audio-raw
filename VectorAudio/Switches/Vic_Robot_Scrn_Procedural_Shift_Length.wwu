@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{87F4236E-FC1F-4B53-AE82-F15724868A25}" SchemaVersion="85" RootDocumentID="{B9FAC984-76CC-4216-A44B-9194157A6F4F}">
+	<Switches>
+		<WorkUnit Name="Vic_Robot_Scrn_Procedural_Shift_Length" ID="{87F4236E-FC1F-4B53-AE82-F15724868A25}" OwnerID="{43BBE686-BB9A-458A-8342-2E52CA5713C4}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="Robot_Vic_Scrn_Procedural_Shift_Length" ID="{3E9522C1-EEA9-44B9-8B3D-8F4A0A86795F}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Shift_Short" ID="{4EB31F4E-D892-4EC1-A7F2-7039A49EA62A}"/>
+						<Switch Name="Shift_Long" ID="{5C017949-03D3-4EC7-9757-40367D5CB63A}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Robot_Vic_Screen_Shift_Interpolation_Time" ID="{8F8BF4BA-8450-4031-AA8A-48DBE6BDE3FF}"/>
+						<Curve Name="" ID="{D1BF38DB-7A4B-4905-9DE2-897F70EE6996}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>151</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>300</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

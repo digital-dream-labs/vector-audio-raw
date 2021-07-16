@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8572D491-FE1E-42A1-BA62-CE3456A50D98}" SchemaVersion="85" RootDocumentID="{D7D36728-07ED-45F4-872F-DF58B94CA436}">
+	<GameParameters>
+		<WorkUnit Name="Vic_Robot_External_RTPCs" ID="{8572D491-FE1E-42A1-BA62-CE3456A50D98}" OwnerID="{988B18FE-E31F-45AF-9AE8-D053B9B55D97}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="External_Shape" ID="{8ED4C225-B54F-4DCE-A65D-F9A90188479F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="External_Speed" ID="{A96BCBDC-D429-4BC1-B28A-948B4681B4F7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.2"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
